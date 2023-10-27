@@ -2,6 +2,11 @@
 
 ### team project :Making homepage(neo digital group)
 
+## 23.10.27
+
+- 퍼블리싱 사이트 구조 분석
+- 사이트 구축 요구사항 정리
+
 ## 23.10.26
 
 - 팀 프로젝트 목표 설정
