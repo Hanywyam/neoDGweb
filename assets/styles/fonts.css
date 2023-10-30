@@ -1,7 +1,9 @@
 @charset "utf-8";
 
-/* 'Play', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+/* 
+'Archivo', sans-serif;
+'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;700&display=swap');
 
-/* "SpoqaHanSan", sans-serif; */
-@import url(./SpoqaHanSan.css);
+/* 'Pretendard Variable' */
+@import url(./pretendardvariable.css);

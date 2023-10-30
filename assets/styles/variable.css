@@ -1,10 +1,12 @@
 /* variable.css 변수 선언 */
 
 :root {
-  --main--font--ko: "SpoqaHanSan", -apple-system, BlinkMacSystemFont,
+  --main--font--ko: 'Pretendard Variable', -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-  --main--font--en: "play", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+  --main--font--en: 'Archivo', -apple-system, BlinkMacSystemFont, "Malgun Gothic",
     "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --title--font-en: 'Playfair Display', -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+  "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif; 
 
   --font-size-title: 2.375rem;
   --font-size-count: 3.25rem;
