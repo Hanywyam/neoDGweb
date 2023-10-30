@@ -3,8 +3,8 @@
 ### team project :Making homepage(neo digital group)
 
 ## 23.10.30
-- 퍼블리싱 가이드 작성
 - index.html 작업 진행
+- 퍼블리싱 가이드 작성
 [231030_코딩가이드_ah-oh.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231030_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 
