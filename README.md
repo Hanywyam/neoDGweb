@@ -51,5 +51,5 @@
     - 김민재: header+footer / solution
     - 권지민: what we do / our work
 
-> git hub site: (https://ah-oh-team-project.github.io/make_neoDG/)
+> git hub site: (https://ah-oh-team-project.github.io/make_neoDG/) <br>
 > notion site: (https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b)
