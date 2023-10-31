@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* 임시 setting : 섹션 숨김
+-----------------------------> */
+.header-wrapper,
+.solution-container,
+.whatwedo-container,
+.work-container,
+.footer-container {
+  display: none;
+}
+
+/* common
+-----------------------------> */
+body {
+  width: 100%;
+  background-color: #ddd;
+  font-family: var(--main--font--ko);
+}
+
+/* main1: about us 
+-----------------------------> */
+.about-container {
+}
+
+.about-container .gradi-circle {
+}
+.about1-bg .gradi-circle {
+}
+.about2-bg .gradi-circle {
+  background: radial-gradient(at 65% 40%, #10782e, #59c076, #7de69b);
+}
+
+.about1-txt {
+  background-color: #ddd;
+  height: 100vh;
+}
+.about1-bg {
+}
+.about1-bg .line {
+}
+
+.about2-txt {
+  background-color: #000;
+  height: 100vh;
+}
+.about2-txt .about2-bg {
+}
+.about2-txt .about2-bg {
+}
+
+/* main5: contact us 
+----------------------------- */
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  font-family: var(--main--font--en);
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-container .ctt-gradi-circle {
+  text-indent: -999px;
+  width: 100vw;
+  height: 70vw;
+  border-radius: 50%;
+  background: radial-gradient(
+    41.29% 37.81% at 74.05% 61.62%,
+    rgba(62, 214, 105, 0.677083) 0%,
+    rgba(34, 221, 87, 0.624186) 29.17%,
+    rgba(62, 214, 105, 0) 100%
+  );
+
+  position: relative;
+  right: 35vw;
+  top: 20vw;
+}
+
+.contact-container .ctt-form-wrap {
+  display: grid;
+  justify-items: center;
+}
+.contact-container .ctt-form-wrap .ctt-title {
+  font-family: var(--title--font-en);
+  font-size: 3.5em;
+  text-align: center;
+  margin: 50px 0 30px;
+  z-index: 111;
+}
+.contact-container .ctt-form-wrap p {
+  width: 80%;
+}
+.contact-container .ctt-form-wrap input {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #666;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+/* .contact-container .ctt-form-wrap input:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #666;
+  width: 100%;
+  height: 1px;
+} */
+/*
+.contact-container .ctt-form-wrap #user-name {
+}
+.contact-container .ctt-form-wrap #user-email {
+}
+.contact-container .ctt-form-wrap #user-share {
+} */
+.contact-container .ctt-form-wrap .ctt-btn {
+  width: 80%;
+  height: 60px;
+  background-color: #259345;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-container > h2 {
+  font-family: var(--title--font-en);
+  font-size: 2em;
+  width: 80%;
+  margin: 50px auto;
+}
+
+footer form input:focus {
+  border-color: #79fb9e;
+  color: #ffffff;
+}
+
+footer form input:focus::placeholder {
+  color: #ffffff;
+}
