@@ -24,11 +24,17 @@ body {
 }
 
 .about-container .gradi-circle {
+  text-indent: -999px;
+  border-radius: 50%;
+  background: radial-gradient(at 65% 40%, #10782e, #59c076, #7de69b);
 }
 .about1-bg .gradi-circle {
+  width: 30vw;
+  height: 30vw;
 }
 .about2-bg .gradi-circle {
-  background: radial-gradient(at 65% 40%, #10782e, #59c076, #7de69b);
+  width: 100vw;
+  height: 100vw;
 }
 
 .about1-txt {
@@ -42,6 +48,7 @@ body {
 
 .about2-txt {
   background-color: #000;
+  color: #fff;
   height: 100vh;
 }
 .about2-txt .about2-bg {
