@@ -1,10 +1,27 @@
-# Neo Digital group 홈페이지 제작
+# :love_letter: Neo Digital group 홈페이지 제작
 
 ### team project :Making homepage(neo digital group)
 
+# :boom: Timeline
+
+## 23.10.31
+
+- 각자 섹션별 css 작업 진행~
+  - css 작업 마무리 되는대로 모여서 정리 진행하기로 결정.
+- index.html 각자 파트 작업 병합 및 index 큰섹션 (header/main/footer) 이용해서 정리하기
+- html W3 유효성 검사 완료
+- 퍼블리싱 가이드 작성 수정사항 -> develop 완료
+- assets 폴더 정리하기
+  - font.css : font는 총 3개로 정리.
+    - 영문 폰트 : ① 'Archivo', sans-serif / ② 'Playfair Display', serif
+    - 한글 폰트 : ③ 'Pretendard Variable', sans-serif
+  - variable.css
+    - 23.10.31 : 폰트만 설정
+- variable.css 같이 의논해서 정리하기 -> 현재 섹션마다 사이즈가 너무 상이해서, 추후 각자 css 작업 완료 후 병합 시 변수로 사이즈 통일 정리하기로 함.
+
 ## 23.10.30
 
-- index.html 작업 진행
+- index.html 작업 진행~
 - 퍼블리싱 가이드 작성
   [231030\_코딩가이드\_ah-oh.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231030_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
