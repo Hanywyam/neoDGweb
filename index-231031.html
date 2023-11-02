@@ -3,32 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
-    <!-- reset css -->
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <!-- font css -->
-    <link rel="stylesheet" href="./assets/styles/fonts.css">
-    <!-- 변수 css -->
-    <link rel="stylesheet" href="./assets/styles/variable.css">
+    <title>index</title>    
     <!-- viewport -->
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     <!-- og -->
     <meta property="title" content="수정하기">
     <meta property="description" content="수정하기">
     <meta property="url" content="수정하기">
     <link rel="icon" href=".수정하기" type="수정하기">
-    <!-- GSAP 연결 -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <!-- javaScript link :K-민재/ M-지민/ J-재영 -->
-    <!-- <script defer src="./index-m_K.js"></script> -->
-    <!-- <script defer src="./index-m_M.js"></script> -->
-    <script defer src="./index-m_J.js"></script>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    
+    <!-- font css -->
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+    
+    <!-- 변수 css -->
+    <link rel="stylesheet" href="./assets/styles/variable.css">
+
     <!-- css link :K-민재/ M-지민/ J-재영 -->
     <!-- <link rel="stylesheet" href="./index-m_K.css"> -->
     <!-- <link rel="stylesheet" href="./index-m_M.css"> -->
     <link rel="stylesheet" href="./index-m_J.css">
+    
+    <!-- javaScript link :K-민재/ M-지민/ J-재영 -->
+    <!-- <script defer src="./index-m_K.js"></script> -->
+    <!-- <script defer src="./index-m_M.js"></script> -->
+    <script defer src="./index-m_J.js"></script>
+   
 </head>
 
 <body>
@@ -341,6 +345,61 @@
             </div>
         </div>
     </footer>
+
+    <!-- GSAP 연결 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <script>
+    /* main1: about us 
+    ----------------------------- */
+    /* main1: about1 bg
+        0) 모든 객체 opacity 0 -> 1
+        1) circle 방향 : top -> bottom
+        2) orange-line 방향 : bottom -> top 이때, txtBox title 등장완료.
+        3) 1과 2가 1의 bottom에 만나면, dotted-line 4개 생성. txtBox p 등장완료.
+        4) circle 중앙 멈춤. dotted-line1 멈춤. 
+        5) dotted-line2가 circle의 top 위치에 멈춤. 
+        6) 나머지 dotted-line3, 4는 orange-line와 같이 움직임
+        7) orange-line이 top 방향으로 화면에서 사라지면,
+        8) circle이 bottom 방향으로 사라짐.
+        9) circle이 사라지면 dotted-line 모두 top방향으로 사라짐.
+        10) 모든 객체 opacity 1 -> 0 */
+
+    // 1) circle 방향
+    const ani1 = gsap.timeline();
+    ani1.to(".about1-wrap .gradi-circle", { y: 500, autoAlpha: 1 });
+
+    const ani2 = gsap.timeline();
+    // ani2.to(".about1-wrap .solid-line", {y: -500, autoAlpha: 1});
+    
+    ScrollTrigger.create({
+      animation: ani1,
+      trigger: ".about1-wrap",
+      start: "top top",
+      end: "+=3000",
+      scrub: true,
+      pin: true,
+      anticipatePin: 1,
+     markers: true,
+    });
+
+    const ani3 = gsap.timeline();
+    ani3.from(".about2-wrap .gradi-circle", {scale: 20, y: 500, autoAlpha: 1});
+    
+    ScrollTrigger.create({
+      animation: ani1,
+      trigger: ".about2-wrap",
+      start: "top top",
+      end: "+=3000",
+      scrub: true,
+      pin: true,
+      anticipatePin: 1,
+     markers: true,
+    });
+
+    </script>
 </body>
 
 </html>

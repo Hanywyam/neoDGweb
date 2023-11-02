@@ -13,6 +13,7 @@
 /* common
 -----------------------------> */
 body {
+  background-color: #000;
   line-height: 1.6;
   width: 100%;
   font-family: var(--main--font--ko);
@@ -22,6 +23,7 @@ body {
 /* main1: about us 
 -----------------------------> */
 .about-container {
+  background-color: #fff;
   width: 100vw;
 }
 .about1-wrap {
@@ -103,6 +105,16 @@ body {
   height: 40vw;
   position: absolute;
   top: -180px;
+  opacity: 0;
+  /* animation: rotate 2s linear infinite; */
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .about2-wrap {
   height: 100vh;
@@ -116,12 +128,13 @@ body {
   );
 }
 .about2-bg .gradi-circle {
-  width: 200vw;
-  height: 200vw;
+  width: 90vw;
+  height: 90vw;
 
   position: absolute;
-  bottom: -50vw;
-  left: -180vw;
+  top: -12%;
+  right: -25%;
+  opacity: 0;
 }
 
 /* main1: about1+2 circle setting */

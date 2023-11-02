@@ -13,20 +13,6 @@
         9) circle이 사라지면 dotted-line 모두 top방향으로 사라짐.
         10) 모든 객체 opacity 1 -> 0 */
 
-const ani1 = gsap.timeline();
-ani1.to("#about1=wrap .gradi-circle", { rotation: 360 });
-
-ScrollTrigger.create({
-  animation: ani1,
-  trigger: "about1-wrap",
-  start: "top top",
-  end: "+=3000",
-  scrub: true,
-  pin: true,
-  anticipatePin: 1,
-  markers: true,
-});
-
 /*  main1: about2 bg
         0) 모든 객체 opacity 0 -> 1
         1) circle이 화면 bottom에서 top 방향으로 움직임. 사이즈 화면 200% -> 60% 정도
