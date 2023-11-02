@@ -1,16 +1,24 @@
-# :love_letter: Neo Digital group 홈페이지 제작
+# :love_letter: Team project : Ah-oh
 
-### team project : <br> Making homepage(neo digital group)
+### 웹사이트 리디자인, 사이트 구현을 목표로 한다 (반응형 웹사이트 제작) <br> Making homepage(neo digital group)
+
+> git hub site: (https://ah-oh-team-project.github.io/make_neoDG/) <br>
+> notion site: (https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b)
 
 # :boom: Project Timeline
+
+## 23.11.01~05
+
+- 각자 섹션별 css, javascript 작업 진행.
+- 맡은 영역 최대한 웹사이트와 동일하게 구현 완성 목표로 작업.
 
 ## 23.10.31
 
 - 각자 섹션별 css 작업 진행
   - css 작업 마무리 되는대로 모여서 정리 진행하기로 결정.
-- index.html 각자 파트 작업 병합 및 index 큰섹션 (header/main/footer) 이용해서 정리하기
-- html W3 유효성 검사 완료
-- 퍼블리싱 가이드 작성 수정사항 -> develop 완료
+- index.html 각자 파트 작업 병합 및 index 큰섹션 (header/main/footer) 이용해서 정리하기.
+- html W3 유효성 검사 완료.
+- 퍼블리싱 가이드 작성 수정사항 -> develop 완료.
 
 - assets 폴더 정리하기
   - font.css : font는 총 3개로 정리.
@@ -22,21 +30,21 @@
 
 ## 23.10.30
 
-- index.html 작업 진행
-- 퍼블리싱 가이드 작성
+- index.html 작업 진행.
+- 퍼블리싱 가이드 작성.
   [231030\_코딩가이드\_ah-oh.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 ## 23.10.27
 
-- 퍼블리싱 사이트 구조 분석
-- 사이트 구축 요구사항 정리
+- 퍼블리싱 사이트 구조 분석.
+- 사이트 구축 요구사항 정리.
   [231026\_요구사항+구조분석.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231026_%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD+%EA%B5%AC%EC%A1%B0%EB%B6%84%EC%84%9D_ah-oh.pdf)
 
 ## 23.10.26
 
-- 팀 프로젝트 목표 설정
-- 사이트 구조 분석 및 작업 역할 분담
-- 팀원별 맡은 영역에 대한 퍼블리싱 가이드 분석
+- 팀 프로젝트 목표 설정.
+- 사이트 구조 분석 및 작업 역할 분담.
+- 팀원별 맡은 영역에 대한 퍼블리싱 가이드 분석.
 
 ### 목표
 
@@ -68,6 +76,3 @@
     - 한재영: about / contact
     - 김민재: header+footer / solution
     - 권지민: what we do / our work
-
-> git hub site: (https://ah-oh-team-project.github.io/make_neoDG/) <br>
-> notion site: (https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b)

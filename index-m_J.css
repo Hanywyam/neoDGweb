@@ -15,7 +15,6 @@
 body {
   line-height: 1.6;
   width: 100%;
-  /* background-color: #ddd; */
   font-family: var(--main--font--ko);
   word-break: keep-all;
 }
@@ -49,13 +48,17 @@ body {
   line-height: 1;
   font-size: 2.3rem;
   font-weight: 100;
-  color: #222;
   margin: 10px 0;
+}
+.about-container .about1-txt h2 {
+  color: #222;
+}
+.about-container .about1-txt p {
+  color: #444;
 }
 
 .about-container p {
   font-weight: 200;
-  color: #444;
 }
 
 /* main1: about1 섹션 텍스트 */
@@ -106,9 +109,8 @@ body {
   position: relative;
   background: linear-gradient(
     #fff 0%,
-    rgba(62, 214, 105, 0.677083) 10%,
-    rgba(34, 221, 87, 0.624186) 29.17%,
-    rgba(16, 120, 46, 1) 60%,
+    /* rgba(62, 214, 105, 0.677083) 10%, */ rgba(34, 221, 87, 0.624186) 15%,
+    rgba(16, 120, 46, 1) 40%,
     rgba(0, 0, 0, 0.9) 90%,
     #000 100%
   );
@@ -131,6 +133,12 @@ body {
 /* main1: about2 섹션 텍스트 */
 .about2-txt {
   color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* main5: contact us 
