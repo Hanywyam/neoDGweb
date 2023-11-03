@@ -1,0 +1,259 @@
+@charset "utf-8";
+.whatwedo-container {
+  position: relative;
+  background-color: black;
+  height: 120vh;
+  color: white;
+}
+.whatwedo-container .whatwedo-wrap {
+  position: absolute;
+  top: 15vh;
+  left: 4vw;
+}
+.whatwedo-container .whatwedo-wrap h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 5vw;
+  text-align: left;
+  padding-bottom: 2vw;
+}
+.whatwedo-container .whatwedo-wrap h3 span {
+  padding-top: 1.5vw;
+  font-size: 3vw;
+  text-align: left;
+}
+.whatwedo-container .whatwedo-wrap p {
+  font-size: 12px;
+  text-align: left;
+}
+
+/* what we do graph */
+.whatwedo-container .whatwedo-graph {
+  z-index: 2;
+  position: relative;
+  padding: 45vh;
+  left: 65%;
+  transform: translateX(-70%) rotate(90deg);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-line {
+  position: relative;
+  bottom: 3.5vw;
+  left: ;
+  width: 100vw;
+  height: 1px;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-line div {
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+/* graph txt */
+.whatwedo-container .whatwedo-graph .whatwedo-txt {
+  position: absolute;
+  top: 62vw;
+  left: 64vh;
+  height: 90vw;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: rotate(-90deg);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  left: 22.5vw;
+  top: -4vw;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+}
+*/ .whatwedo-container .whatwedo-graph .whatwedo-txt .item {
+  position: relative;
+}
+
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  left: -22px;
+  bottom: -13vw;
+  text-align: left;
+  box-sizing: border-box;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h6::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  left: 22.5vw;
+  margin-top: 35px;
+  width: 7px;
+  height: 7px;
+  z-index: 1;
+  background: #fff;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h6::before {
+  position: absolute;
+  content: "";
+  left: 22.5vw;
+  margin-top: 10px;
+  width: 6px;
+  z-index: 1;
+  height: 7px;
+  background: url("./assets/images/arrow1.svg");
+  transform: rotate(90deg);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 span {
+  line-height: 1;
+  height: auto;
+  font-size: 2vw;
+  padding-bottom: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 {
+  font-size: 2.8vw;
+  margin-top: -20px;
+  z-index: 11;
+  text-align: left;
+  position: absolute;
+  left: 50vw;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-itme {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+/*whatwedo-i*/
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-dot {
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-bottom: 0;
+  left: -0px;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .line-dot {
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .line-dot i {
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr1 {
+  background: linear-gradient(90deg, #fa6738, #79fb9e, #d9fee3) border-box;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr2 {
+  background: linear-gradient(90deg, #fa6738, #b2bb72) border-box;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr3 {
+  background: linear-gradient(90deg, #b2bb72, #79fb9e, #b2fdc7) border-box;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr4 {
+  background: linear-gradient(90deg, #b2fdc7, #d9fee3) border-box;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr5 {
+  background: linear-gradient(90deg, #d9fee3, #ffffff) border-box;
+}
+
+/* our work */
+.work-container {
+  background-color: black;
+  height: 100%;
+}
+
+.work-container .wrapper-txt div {
+  display: block;
+  width: 100%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+.work-container .wrapper-txt .top > div {
+  left: 5vw;
+  margin-top: 5vw;
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  background: url(./assets/images/circle_orange.svg) center center no-repeat;
+  background-size: cover;
+}
+.work-container .wrapper-txt .top > div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background: linear-gradient(to bottom, #000 0%, transparent 50%);
+}
+.work-container .wrapper-txt .bottom > div {
+  left: 5vw;
+  margin-top: -25vw;
+  width: 50vw;
+  height: 50vw;
+  filter: blur(20px);
+  position: relative;
+  background: url(./assets/images/circle_orange.svg) center center no-repeat;
+  background-size: cover;
+}
+.work-container .wrapper-txt .bottom h3 {
+  position: absolute;
+  top: 16vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.4;
+  color: white;
+}
+
+/* 이미지 슬라이드 쇼 */
+.work-container .wrapper-img {
+  padding: 0 0 30vw;
+}
+.work-container .wrapper-img .work-img-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  height: 80vw;
+  margin: 0 auto;
+}
+.work-container .wrapper-img .work-img-wrap > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+.work-container .wrapper-img .work-img-wrap div a img {
+  width: 80vw;
+  height: 80vw;
+  object-fit: cover;
+  display: inline-block;
+}
+.work-container .wrapper-img .work-img-wrap > div.on {
+  opacity: 1;
+}
+.work-container .wrapper-img .work-img-wrap .work-control {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+}
+
+.work-container .wrapper-img .work-img-wrap .work-control a {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background: #f6f5f5;
+  line-height: 26px;
+  font-size: 0.5rem;
+  border-radius: 10px;
+  margin: 0 2px;
+}
+.work-container .wrapper-img .work-img-wrap .work-control a.on {
+  background: #dc6e36;
+}

@@ -1,29 +1,32 @@
 @charset "utf-8";
 
 /* 임시 setting : 섹션 숨김
------------------------------> */
+----------------------------->
 .header-wrapper,
 .solution-container,
 .whatwedo-container,
 .work-container,
 .footer-container {
   display: none;
-}
+} */
 
 /* common
 -----------------------------> */
 body {
-  background-color: #000;
   line-height: 1.6;
   width: 100%;
   font-family: var(--main--font--ko);
   word-break: keep-all;
+  /* overflow: hidden; */
+  /* --bg-color: #000;
+  background-color: var(--bg-color); */
 }
 
 /* main1: about us 
 -----------------------------> */
+main {
+}
 .about-container {
-  background-color: #fff;
   width: 100vw;
 }
 .about1-wrap {

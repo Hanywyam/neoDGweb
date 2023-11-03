@@ -21,6 +21,16 @@
         4) circle이 top에 도착했을때 모든 txtBox 등장 완료.
         5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 */
 
+/* main1: about1 bg 배경컬러 스르륵.. 흑->백 
+const headerWrp = document.querySelector(".header-wrapper");
+const abCtn = document.querySelector(".about-container");
+
+addEventListener("scroll", () => {
+  let abCtnOffH = abCtn.offsetTop + headerWrp.offsetHeight;
+  console.log(abCtnOffH);
+  headerWrp.classList.toggle("active", scrollY > abCtnOffH);
+});*/
+
 /* main5: contact us 
 ----------------------------- */
 // main5: submit 버튼 내용이 없으면 alert('필수 내용을 입력해주세요.');

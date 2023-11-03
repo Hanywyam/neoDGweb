@@ -1,0 +1,135 @@
+@charset "utf-8";
+@media (width <= 760px) {
+  .solution-container {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+  }
+  .solution-container .video1 {
+    background: url(./assets/images/wave.svg) no-repeat;
+    position: relative;
+    top: 160px;
+    margin: 0;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes move {
+    /* keyframe */
+    from {
+      right: 50px;
+    }
+    /* keyframe */
+    to {
+      top: 30px;
+    }
+  }
+  .solution-container .video2 {
+    background: url(./assets/images/wave.svg) no-repeat;
+    position: relative;
+    bottom: 50px;
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes move1 {
+    /* keyframe */
+    from {
+      left: 0;
+    }
+    /* keyframe */
+    to {
+      bottom: 120px;
+    }
+  }
+
+  .solution-wrap1 {
+    height: 80vh;
+    position: relative;
+    bottom: 500px;
+  }
+  .solution-wrap2 {
+    height: 80vh;
+  }
+  .solution-wrap1 p {
+    font-size: 11.7px;
+  }
+  .solution-wrap1 h5 {
+    font-size: 19.5px;
+  }
+  .solution-wrap1 h3 {
+    position: relative;
+    font-size: 31.2px;
+    margin-left: 20px;
+  }
+  .solution-wrap1 .solution1-txt1 {
+    position: relative;
+    top: 260px;
+    left: 60px;
+    width: 60px;
+  }
+  .solution-wrap1 .solution1-txt2 {
+    position: relative;
+    left: 150px;
+    top: 145px;
+    width: 130px;
+  }
+  .solution-wrap1 .solution1-txt3 {
+    position: relative;
+    top: 28px;
+    left: 270px;
+    width: 120px;
+  }
+
+  .solution-wrap2 .solution2-txt1,
+  .solution2-txt2,
+  .solution2-txt3 {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    top: 400px;
+  }
+  .solution-wrap2 h5,
+  span {
+    font-size: 11.7px;
+    width: 80px;
+    margin-left: 6px;
+    margin-right: 5px;
+  }
+  .solution-wrap2 span {
+    color: #fa6738;
+  }
+  .solution-wrap2 p {
+    font-size: 9.75px;
+    text-align: left;
+  }
+  .solution-wrap2 .solution2-txt1-1 {
+    text-align: left;
+  }
+  .solution-wrap2 .solution2-txt1-2 {
+    text-align: left;
+  }
+  .solution-wrap2 .solution2-txt1-3 {
+    text-align: left;
+    margin-left: 0;
+  }
+  .numbers-txt h3 {
+    font-size: 19.5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .numbers-txt p {
+    font-size: 11.7px;
+    width: 330px;
+    padding-left: 20px;
+  }
+  .global-mp4 {
+    position: relative;
+    top: 200px;
+    left: 150px;
+  }
+  .solution-container img {
+    position: relative;
+    top: 350px;
+  }
+}

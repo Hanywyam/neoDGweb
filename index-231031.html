@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>index</title>    
+    <title>index</title>
     <!-- viewport -->
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
+
     <!-- og -->
     <meta property="title" content="수정하기">
     <meta property="description" content="수정하기">
@@ -16,23 +16,25 @@
 
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
-    
+
     <!-- font css -->
     <link rel="stylesheet" href="./assets/styles/fonts.css">
-    
+
     <!-- 변수 css -->
     <link rel="stylesheet" href="./assets/styles/variable.css">
 
     <!-- css link :K-민재/ M-지민/ J-재영 -->
-    <!-- <link rel="stylesheet" href="./index-m_K.css"> -->
-    <!-- <link rel="stylesheet" href="./index-m_M.css"> -->
+    <link rel="stylesheet" href="./index-m_K-header.css">
+    <link rel="stylesheet" href="./index-m_K-footer.css">
+    <link rel="stylesheet" href="./index-m_K-solution.css">
+    <link rel="stylesheet" href="./index-m_M.css">
     <link rel="stylesheet" href="./index-m_J.css">
-    
+
     <!-- javaScript link :K-민재/ M-지민/ J-재영 -->
     <!-- <script defer src="./index-m_K.js"></script> -->
     <!-- <script defer src="./index-m_M.js"></script> -->
     <script defer src="./index-m_J.js"></script>
-   
+
 </head>
 
 <body>
@@ -42,27 +44,27 @@
         <div class="header-wrapper">
             <div class="header-menu">
                 <h1>NEO Digital Group</h1>
-                <a href="#"><img src="./assets/images/neo-logo.png" alt="menu"></a>
+                <label id="mouse-over-label"><img src="./assets/images/menus.svg" alt="menus"></label>
+                <ul class="menubars">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">solution </a></li>
+                    <li><a href="#">what we do</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
             </div>
+        </div>
 
-            <menu>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">solution </a></li>
-                <li><a href="#">what we do</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">contact</a></li>
-            </menu>
-
-            <div class="circle1">
-                <span>그라디언트</span>
-            </div>
+        <div class="circle1">
+            <span>그라디언트</span>
+        </div>
 
 
-            <div class="main">
-                <h2>Crearivity</h2>
-                <h2>Meets</h2>
-                <h2>Technology</h2>
-            </div>
+        <div class="main">
+            <h2>Crearivity</h2>
+            <h2>Meets</h2>
+            <h2>Technology</h2>
+        </div>
         </div>
     </header>
 
@@ -109,6 +111,7 @@
         <!-- main2: our solution 
         ----------------------------->
         <div class="solution-container">
+            <img src="./assets/images/chart0.png" alt="chart0">
             <video class="video1"></video>
             <video class="video2"></video>
             <div class="solution-wrap1">
@@ -140,24 +143,31 @@
                 </div>
                 <div class="global-mp4">지구영상</div>
                 <div class="solution2-txt1">
-                    <h5>업무</h5>
-                    <span>What We Do</span>
-                    <p>브랜드 브랜딩 및 브랜드 리뉴얼.
-                        디지털 콘텐츠 제작 및 유통.
+                    <div class="solutione2-txt1-1">
+                        <h5>업무</h5>
+                        <span>What We Do</span>
+                    </div>
+                    <p>비지니스 모델 디지털 전환.
+                        브랜드 브랜딩 및 브랜드 리뉴얼.
+                        디지털 <br>콘텐츠 제작 및 유통.
                         운영구조조정 및 인프라관리 자문처리.
                         자금 조달 및 M&A 컨설팅, 실무대행.</p>
                 </div>
                 <div class="solution2-txt2">
-                    <h5>효과</h5>
-                    <span>Benefits</span>
+                    <div class="solutione2-txt1-2">
+                        <h5>효과</h5>
+                        <span>Benefits</span>
+                    </div>
                     <p>토탈 마케팅 솔루션으로 수익모델 개선.
                         귀사는 제품 개발에만 집중가능.
                         객관적 시장 가격 산출 어려운 분야의 자금 리스트 개선.
                         경영 전반의 컨설팅 및 실무대행을 통한 지속적 파트너쉽 유지. </p>
                 </div>
                 <div class="solution2-txt3">
-                    <h5>강점</h5>
-                    <span>Our Strengths</span>
+                    <div class="solutione2-txt1-2">
+                        <h5>강점</h5>
+                        <span>Our Strengths</span>
+                    </div>
                     <p>숙련된 자사몰 운영 포트폴리오 다수 보유.
                         수익 개선이 가능한 제품 카테고리 발굴.
                         창의적인 서비스 기획, 마케팅 전략 수립.
@@ -171,8 +181,9 @@
         ----------------------------->
         <div class="whatwedo-container">
             <div class="whatwedo-wrap">
-                <h3>what we bo</h3>
-                <h5>capabilities</h5>
+                <h3> what we bo
+                    <span>capabilities</span>
+                </h3>
                 <p>네오 디지털 그룹은 수익 증대, 브랜드 가치 향상, 투자수익률 개선이
                     지속적으로 가능한 비지니스 모델을 만들어 나갑니다.</p>
             </div>
@@ -188,20 +199,20 @@
                             리서치 및 정보 수집
                         </h6>
                         <div class="line-item">
-                            <h6>
+                            <h4>
                                 운영 서포트
                                 <span>management support</span>
-                            </h6>
-                            <i></i>
+                            </h4>
+                            <i class="cl gr1"></i>
                         </div>
                         <div class="line-item">
                             <h4>
                                 전략
                                 <span>strategy</span>
                             </h4>
-                            <i></i>
+                            <i class="cl gr2"></i>
                         </div>
-                        <div class="line-dot1">
+                        <div class="line-dot">
                             <i></i>
                         </div>
                     </div>
@@ -221,12 +232,12 @@
                                 구축
                                 <span>build-up</span>
                             </h4>
+                            <i class="cl gr3"></i>
+                        </div>
+                        <div class="line-dot w1">
                             <i></i>
                         </div>
-                        <div class="line-dot1">
-                            <i></i>
-                        </div>
-                        <div class="line-dot2">
+                        <div class="line-dot">
                             <i></i>
                         </div>
                     </div>
@@ -252,7 +263,7 @@
                                 확산
                                 <span>spreading</span>
                             </h4>
-                            <i></i>
+                            <i class="cl gr4"></i>
                         </div>
                     </div>
                     <div class="item">
@@ -265,7 +276,7 @@
                                 유통
                                 <span>distribution</span>
                             </h4>
-                            <i></i>
+                            <i class="cl gr5"></i>
                         </div>
                         <h4>
                             투자자문
@@ -280,20 +291,33 @@
         <!-- main4: our work 
         ----------------------------->
         <div class="work-container">
-            <h3>our work</h3>
-            <div class="work-wrapper">
-                <ul class="work-img-wrap">
-                    <li><img src="./assets/images/test1_4e5791bc.png" alt="코트를 입고 있는 두 사람"></li>
-                    <li><img src="./assets/images/building-facade-logo-mockup15B15D_7c1c0fac.jpg" alt="건물 외벽 로고"></li>
-                    <li><img src="./assets/images/Free-Premium-Stationery-PSD-Mockup5B15D_e5996a84.jpg" alt="명함 이미지">
-                    </li>
-                    <li><img src="./assets/images/977466ebd2cbe1bf111f6ff283717ed25B15D_421989b7.webp" alt="텐다 외부 간판">
-                    </li>
-                </ul>
+            <div class="wrapper-txt">
+                <div class="top">
+                    <div></div>
+                </div>
+                <div class="bottom">
+                    <div></div>
+                    <h3>our work</h3>
+                </div>
             </div>
-            <div class="arrow">
-                <a href="" class="prev">이전</a>
-                <a href="" class="next">다음</a>
+            <div class="wrapper-img">
+                <div id="wrapper" class="work-img-wrap">
+                    <div class="on"><a href="#"><img src="./assets/images/test1_4e5791bc.png" alt="코트를 입고 있는 두 사람"></a>
+                    </div>
+                    <div><a href="#"><img src="./assets/images/building-facade-logo-mockup15B15D_7c1c0fac.jpg"
+                                alt="건물 외벽 로고"></a></div>
+                    <div><a href="#"><img src="./assets/images/Free-Premium-Stationery-PSD-Mockup5B15D_e5996a84.jpg"
+                                alt="명함 이미지"></a></div>
+                    <div><a href="#"><img src="./assets/images/977466ebd2cbe1bf111f6ff283717ed25B15D_421989b7.webp"
+                                alt="텐다 외부 간판"></a></div>
+
+                    <section class="work-control">
+                        <a class="on" href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -320,7 +344,7 @@
     <footer>
         <div class="footer-container">
             <div class="text1">
-                <span>(주)네오디지털그룹 대표자: 김무열</span>
+                <span>(주)네오디지털그룹 대표자:김무열</span>
                 <span>사업자등록번호: 623-81-01529</span>
             </div>
 
@@ -352,52 +376,70 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <script>
-    /* main1: about us 
-    ----------------------------- */
-    /* main1: about1 bg
-        0) 모든 객체 opacity 0 -> 1
-        1) circle 방향 : top -> bottom
-        2) orange-line 방향 : bottom -> top 이때, txtBox title 등장완료.
-        3) 1과 2가 1의 bottom에 만나면, dotted-line 4개 생성. txtBox p 등장완료.
-        4) circle 중앙 멈춤. dotted-line1 멈춤. 
-        5) dotted-line2가 circle의 top 위치에 멈춤. 
-        6) 나머지 dotted-line3, 4는 orange-line와 같이 움직임
-        7) orange-line이 top 방향으로 화면에서 사라지면,
-        8) circle이 bottom 방향으로 사라짐.
-        9) circle이 사라지면 dotted-line 모두 top방향으로 사라짐.
-        10) 모든 객체 opacity 1 -> 0 */
+        /* header -> main 1 넘어갈 때 배경색 자연스럽게..
+        let bg = gsap.timeline({
+            ScrollTrigger: {
+                start: 0,
+                end: "150vh",
+                scrub: true,
+            }
+        })
+        bg.from("main", { "--bg-color": "#000" }); */
 
-    // 1) circle 방향
-    const ani1 = gsap.timeline();
-    ani1.to(".about1-wrap .gradi-circle", { y: 500, autoAlpha: 1 });
+        /* main1: about us 
+        ----------------------------- */
+        /* main1: about1 bg
+            0) 모든 객체 opacity 0 -> 1
+            1) circle 방향 : top -> bottom
+            2) orange-line 방향 : bottom -> top 이때, txtBox title 등장완료.
+            3) 1과 2가 1의 bottom에 만나면, dotted-line 4개 생성. txtBox p 등장완료.
+            4) circle 중앙 멈춤. dotted-line1 멈춤. 
+            5) dotted-line2가 circle의 top 위치에 멈춤. 
+            6) 나머지 dotted-line3, 4는 orange-line와 같이 움직임
+            7) orange-line이 top 방향으로 화면에서 사라지면,
+            8) circle이 bottom 방향으로 사라짐.
+            9) circle이 사라지면 dotted-line 모두 top방향으로 사라짐.
+            10) 모든 객체 opacity 1 -> 0 */
 
-    const ani2 = gsap.timeline();
-    // ani2.to(".about1-wrap .solid-line", {y: -500, autoAlpha: 1});
-    
-    ScrollTrigger.create({
-      animation: ani1,
-      trigger: ".about1-wrap",
-      start: "top top",
-      end: "+=3000",
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-     markers: true,
-    });
+        // 1) circle 방향
+        const ani1 = gsap.timeline();
+        ani1.to(".about1-wrap .gradi-circle", { y: 500, autoAlpha: 1 });
 
-    const ani3 = gsap.timeline();
-    ani3.from(".about2-wrap .gradi-circle", {scale: 20, y: 500, autoAlpha: 1});
-    
-    ScrollTrigger.create({
-      animation: ani1,
-      trigger: ".about2-wrap",
-      start: "top top",
-      end: "+=3000",
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-     markers: true,
-    });
+        const ani2 = gsap.timeline();
+        // ani2.to(".about1-wrap .solid-line", {y: -500, autoAlpha: 1});
+
+        ScrollTrigger.create({
+            animation: ani1,
+            trigger: ".about1-wrap",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            // markers: true,
+        });
+
+        /*  main1: about2 bg
+                0) 모든 객체 opacity 0 -> 1
+                1) circle이 화면 bottom에서 top 방향으로 움직임. 사이즈 화면 200% -> 60% 정도
+                2) circle이 2/3까지 채워졌을 때 txtBox title 등장
+                3) circle의 사이즈가 줄어들면서 txtBox p 등장. 사이즈 화면 30% 정도
+                4) circle이 top에 도착했을때 모든 txtBox 등장 완료.
+                5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 */
+
+        const ani3 = gsap.timeline();
+        ani3.from(".about2-wrap .gradi-circle", { scale: 20, y: 500, autoAlpha: 1 });
+
+        ScrollTrigger.create({
+            animation: ani1,
+            trigger: ".about2-wrap",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            // markers: true,
+        });
 
     </script>
 </body>

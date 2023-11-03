@@ -1,0 +1,67 @@
+@charset "utf-8";
+@media (width <= 760px) {
+  .header-wrapper {
+    color: #fff;
+    background-color: #000;
+    height: 100vh;
+  }
+  #mouse-over-label:active ~ .menubars {
+    display: block;
+  }
+  .menubars {
+    display: none;
+  }
+  .menubars {
+    background-color: #79fb9e;
+    position: relative;
+    top: 150px;
+    right: 50px;
+  }
+  .menubars li {
+    font-size: 2rem;
+    position: relative;
+    top: 150px;
+    right: 50px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .header-menu {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  }
+  .header-menu img {
+    width: 30px;
+    position: absolute;
+    right: 2px;
+    cursor: pointer;
+  }
+  .header h1 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .main {
+    color: #fff;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+  }
+  .main h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .circle1 span {
+    text-indent: -9999px;
+    border-radius: 50%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 500px;
+    background: linear-gradient(-90deg, #79fb9e, rgba(121, 251, 158, 0));
+    animation: circle_move 22s linear infinite;
+  }
+}
