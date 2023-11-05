@@ -10,7 +10,8 @@
 
     <!-- og -->
     <meta property="og:title" content="Team project:Ah-oh">
-    <meta property="og:description" content="[팀프로젝트:아오] 웹사이트 리디자인, 사이트 구현을 목표로 한다(반응형 웹사이트 제작) - Making homepage(neo digital group)">
+    <meta property="og:description"
+        content="[팀프로젝트:아오] 웹사이트 리디자인, 사이트 구현을 목표로 한다(반응형 웹사이트 제작) - Making homepage(neo digital group)">
     <meta property="og:url" content="https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html">
     <meta property="og:image" content="https://ah-oh-team-project.github.io/make_neoDG/assets/images/neo-logo.png">
     <link rel="icon" href="./assets/images/favicon/favicon.ico" type="favicon">
@@ -28,18 +29,19 @@
     <link rel="stylesheet" href="./index-m_K-header.css">
     <link rel="stylesheet" href="./index-m_K-footer.css">
     <link rel="stylesheet" href="./index-m_K-solution.css">
-    <link rel="stylesheet" href="./index-m_M.css">
-    <link rel="stylesheet" href="./index-m_J.css">
+    <link rel="stylesheet" href="./index-m.css">
+
+    <!-- javaScript link : 외부링크 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- javaScript link :K-민재/ M-지민/ J-재영 -->
     <!-- <script defer src="./index-m_K.js"></script> -->
-    <!-- <script defer src="./index-m_M.js"></script> -->
+    <script defer src="./index-m_M.js"></script>
     <script defer src="./index-m_J.js"></script>
 
 </head>
 
-<body>
-    <!-- header
+<body><!-- header
     ========================== -->
     <header>
         <div class="header-wrapper">
@@ -115,6 +117,7 @@
             <img src="./assets/images/chart0.png" alt="chart0">
             <video class="video1"></video>
             <video class="video2"></video>
+            <video class="video3"></video>
             <div class="solution-wrap1">
                 <h3>Our Solution</h3>
                 <div class="solution1-txt1">
@@ -142,7 +145,7 @@
                         통합하는 토탈 솔루션, 데이터 기반의 창의성에 집중하여
                         의미있는 성과를 만들어 냅니다.</p>
                 </div>
-                <div class="global-mp4">지구영상</div>
+                <div class="global-mp4"><video src="./assets/images/earth.mp4" autoplay loop muted></video></div>
                 <div class="solution2-txt1">
                     <div class="solutione2-txt1-1">
                         <h5>업무</h5>
@@ -190,9 +193,39 @@
             </div>
 
             <div class="whatwedo-graph">
+                <div class="graph-line">
+                    <div class="gr1"></div>
+                    <div class="gr2"></div>
+                    <div class="gr2-1"></div>
+                    <div class="gr3"></div>
+                    <div class="gr3-1"></div>
+                    <div class="gr3-2"></div>
+                    <div class="gr4"></div>
+                    <div class="gr5"></div>
+                </div>
+                <div class="graph-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="graph-arrow">
+                    <div class="arw"></div>
+                    <div class="arw"></div>
+                    <div class="arw"></div>
+                    <div class="arw"></div>
+                    <div class="arw"></div>
+                    <div class="arw"></div>
+                    <div class="arw"></div>
+                </div>
                 <div class="whatwedo-line">
                     <div></div>
                 </div>
+
                 <div class="whatwedo-txt">
                     <div class="item">
                         <h6>
@@ -200,14 +233,14 @@
                             리서치 및 정보 수집
                         </h6>
                         <div class="line-item">
-                            <h4>
+                            <h4 class="item-txt1">
                                 운영 서포트
                                 <span>management support</span>
                             </h4>
                             <i class="cl gr1"></i>
                         </div>
                         <div class="line-item">
-                            <h4>
+                            <h4 class="item-txt2">
                                 전략
                                 <span>strategy</span>
                             </h4>
@@ -229,7 +262,7 @@
                             브랜드 경험 디자인
                         </h6>
                         <div class="line-item">
-                            <h4>
+                            <h4 class="item-txt3">
                                 구축
                                 <span>build-up</span>
                             </h4>
@@ -260,7 +293,7 @@
                             마케팅
                         </h6>
                         <div class="line-item">
-                            <h4>
+                            <h4 class="item-txt4">
                                 확산
                                 <span>spreading</span>
                             </h4>
@@ -273,13 +306,13 @@
                             운영
                         </h6>
                         <div class="line-item">
-                            <h4>
+                            <h4 class="item-txt5">
                                 유통
                                 <span>distribution</span>
                             </h4>
                             <i class="cl gr5"></i>
                         </div>
-                        <h4>
+                        <h4 class="item-txt6">
                             투자자문
                             <span>investment<br>consulting</span>
                         </h4>
@@ -287,7 +320,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- main4: our work 
         ----------------------------->
@@ -342,7 +374,6 @@
             </div>
         </div>
     </main>
-
 
     <!-- footer
     ========================== -->

@@ -42,14 +42,32 @@
       bottom: 120px;
     }
   }
+  .solution-container .video3 {
+    background: url(./assets/images/wave.svg) no-repeat;
+    position: relative;
+    bottom: 200px;
+    margin: 0;
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes move2 {
+    /* keyframe */
+    from {
+      right: 50px;
+    }
+    /* keyframe */
+    to {
 
+    }
+  }
   .solution-wrap1 {
     height: 80vh;
     position: relative;
     bottom: 500px;
   }
   .solution-wrap2 {
-    height: 80vh;
+    height: 100vh;
   }
   .solution-wrap1 p {
     font-size: 11.7px;
@@ -64,36 +82,39 @@
   }
   .solution-wrap1 .solution1-txt1 {
     position: relative;
-    top: 260px;
+    top: 140px;
     left: 60px;
     width: 60px;
   }
   .solution-wrap1 .solution1-txt2 {
     position: relative;
     left: 150px;
-    top: 145px;
+    top: 10px;
     width: 130px;
   }
   .solution-wrap1 .solution1-txt3 {
     position: relative;
-    top: 28px;
+    bottom: 120px;
     left: 270px;
     width: 120px;
   }
-
+  .numbers-txt {
+    position: relative;
+    bottom: 150px;
+  }
   .solution-wrap2 .solution2-txt1,
   .solution2-txt2,
   .solution2-txt3 {
     display: flex;
     margin-bottom: 20px;
     position: relative;
-    top: 400px;
+    top: 300px;
   }
   .solution-wrap2 h5,
   span {
     font-size: 11.7px;
     width: 80px;
-    margin-left: 6px;
+    margin-left: 15px;
     margin-right: 5px;
   }
   .solution-wrap2 span {
@@ -102,6 +123,7 @@
   .solution-wrap2 p {
     font-size: 9.75px;
     text-align: left;
+    margin-right: 30px;
   }
   .solution-wrap2 .solution2-txt1-1 {
     text-align: left;
@@ -131,5 +153,12 @@
   .solution-container img {
     position: relative;
     top: 350px;
+  }
+  .solution-wrap2 .global-mp4 video {
+    width: 50%;
+    position: relative;
+    right: 50px;
+    bottom: 100px;
+    
   }
 }

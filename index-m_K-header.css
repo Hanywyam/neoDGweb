@@ -12,7 +12,6 @@
     display: none;
   }
   .menubars {
-    background-color: #79fb9e;
     position: relative;
     top: 150px;
     right: 50px;
@@ -64,4 +63,5 @@
     background: linear-gradient(-90deg, #79fb9e, rgba(121, 251, 158, 0));
     animation: circle_move 22s linear infinite;
   }
+  
 }

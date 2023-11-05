@@ -1,8 +1,22 @@
 @charset "utf-8";
+
+/* common
+-----------------------------> */
+body {
+  background-color: #000;
+  line-height: 1.6;
+  width: 100%;
+  font-family: var(--main--font--ko);
+  word-break: keep-all;
+  /* overflow: hidden; */
+}
+
+/* what we do
+-----------------------------> */
 .whatwedo-container {
   position: relative;
   background-color: black;
-  height: 120vh;
+  height: 150vh;
   color: white;
 }
 .whatwedo-container .whatwedo-wrap {
@@ -13,32 +27,179 @@
 .whatwedo-container .whatwedo-wrap h3 {
   display: flex;
   flex-direction: column;
-  font-size: 5vw;
   text-align: left;
   padding-bottom: 2vw;
+  font-family: var(--title--font-en);
+  font-size: 5vw;
+  line-height: 1;
+  color: #ffffff;
 }
 .whatwedo-container .whatwedo-wrap h3 span {
   padding-top: 1.5vw;
   font-size: 3vw;
   text-align: left;
+  margin: 0;
+  font-family: var(--main--font--en);
 }
 .whatwedo-container .whatwedo-wrap p {
-  font-size: 12px;
+  display: block;
+  line-height: 1.6;
+  font-size: 3vw;
   text-align: left;
+  font-family: var(--main--font--en);
+  font-weight: 200;
 }
 
 /* what we do graph */
 .whatwedo-container .whatwedo-graph {
   z-index: 2;
   position: relative;
-  padding: 45vh;
-  left: 65%;
-  transform: translateX(-70%) rotate(90deg);
+  left: -2vw;
+  transform:rotate(90deg);
 }
+/* 그래프 라인 */
+.whatwedo-container .whatwedo-graph .graph-line{
+  position: relative;
+  top: -98px;
+  left: 545px;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr1{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 326px;
+    height: 163px;
+    border: 2px solid transparent;
+    border-radius: 163px 163px 0 0;
+    border-bottom: none;
+    background-image: linear-gradient(#000000, #000000), 
+    linear-gradient(90deg, #fa6738, #79fb9e, #d9fee3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr2{
+  position: absolute;
+    top: 110px;
+    left: 0vw;
+    width: 110px;
+    height: 55px;
+    border: 2px solid transparent;
+    border-radius: 55px 55px 0 0;
+    border-bottom: none;
+    background-image: linear-gradient(#000000, #000000), 
+    linear-gradient(90deg, #fa6738, #b2bb72);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr2-1{
+  position: absolute;
+    top: 135px;
+    width: 56px;
+    height: 28px;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 28px 28px 0 0;
+    border-bottom: none;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr3{
+  position: absolute;
+    top: 83px;
+    left: 108px;
+    width: 164px;
+    height: 82px;
+    border: 2px solid transparent;
+    border-radius: 82px 82px 0 0;
+    border-bottom: none;
+    background-image: linear-gradient(#000000, #000000), 
+    linear-gradient(90deg, #b2bb72, #79fb9e, #b2fdc7);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr3-1{
+  position: absolute;
+    top: 135px;
+    left: 108px;
+    width: 56px;
+    height: 28px;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 28px 28px 0 0;
+    border-bottom: none;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr3-2{
+  position: absolute;
+    top: 105px;
+    left: 108px;
+    width: 110px;
+    height: 55px;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 55px 55px 0 0;
+    border-bottom: none;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr4{
+  position: absolute;
+    top: 136px;
+    left: 270px;
+    width: 56px;
+    height: 28px;
+    border: 2px solid transparent;
+    border-radius: 28px 28px 0 0;
+    border-bottom: none;
+    background-image: linear-gradient(#000000, #000000), 
+    linear-gradient(90deg, #b2fdc7, #d9fee3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.whatwedo-container .whatwedo-graph .graph-line .gr5{
+  position: absolute;
+    top: 136px;
+    left: 323px;
+    width: 56px;
+    height: 28px;
+    border: 2px solid transparent;
+    border-radius: 28px 28px 0 0;
+    border-bottom: none;
+    background-image: linear-gradient(#000000, #000000), 
+    linear-gradient(90deg, #d9fee3, #ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+/* 도트 모양 */
+.whatwedo-container .whatwedo-graph .graph-dots{
+  position: absolute;
+  top: -150px;
+  left: 708px;
+  transform: rotate(90deg);
+}
+.whatwedo-container .whatwedo-graph .graph-dots .dot{
+  border-radius: 50%;
+  content: "";
+  width: 7px;
+  height: 7px;
+  z-index: 1;
+  background: #fff;
+  margin-bottom: 12vw;
+}
+/* 화살표 모양 */
+.whatwedo-container .whatwedo-graph .graph-arrow{
+  position: absolute;
+  top: -123px;
+  left: 708px;
+  transform: rotate(90deg);
+}
+.whatwedo-container .whatwedo-graph .graph-arrow .arw{
+  content: "";
+  margin-bottom: 12vw;
+  width: 6px;
+  height: 7px;
+  background: url("./assets/images/arrow1.svg");
+  transform: rotate(-90deg);
+}
+
+/* 그래프 점선 기본 라인 */
 .whatwedo-container .whatwedo-graph .whatwedo-line {
   position: relative;
-  bottom: 3.5vw;
-  left: ;
+  top: 65px;
+  left: 540px;
   width: 100vw;
   height: 1px;
 }
@@ -54,28 +215,29 @@
 /* graph txt */
 .whatwedo-container .whatwedo-graph .whatwedo-txt {
   position: absolute;
-  top: 62vw;
-  left: 64vh;
+  top: -50px;
+  left: 703px;
   height: 90vw;
+  width: 20vw;
   margin: 0 auto;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   transform: rotate(-90deg);
 }
-.whatwedo-container .whatwedo-graph .whatwedo-txt::after {
+/*.whatwedo-container .whatwedo-graph .whatwedo-txt::after {
   position: absolute;
   border-radius: 50%;
   content: "";
-  left: 22.5vw;
-  top: -4vw;
+  left: 26vw;
+  top: -5vw;
   width: 7px;
   height: 7px;
   background-color: white;
-}
-*/ .whatwedo-container .whatwedo-graph .whatwedo-txt .item {
+}*/
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item {
   position: relative;
+  height: 30px;
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 {
@@ -87,28 +249,27 @@
   text-align: left;
   box-sizing: border-box;
 }
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item h6::after {
+/*.whatwedo-container .whatwedo-graph .whatwedo-txt .item::after {
   position: absolute;
   border-radius: 50%;
   content: "";
-  left: 22.5vw;
-  margin-top: 35px;
+  left: 26vw;
+  bottom: -1vh;
   width: 7px;
   height: 7px;
   z-index: 1;
   background: #fff;
 }
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item h6::before {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item::before {
   position: absolute;
   content: "";
-  left: 22.5vw;
-  margin-top: 10px;
+  left: 26vw;
+  bottom: 2vh;
   width: 6px;
-  z-index: 1;
   height: 7px;
   background: url("./assets/images/arrow1.svg");
   transform: rotate(90deg);
-}
+}*/
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 span {
   line-height: 1;
   height: auto;
@@ -117,45 +278,46 @@
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
 }
+
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 {
   font-size: 2.8vw;
-  margin-top: -20px;
   z-index: 11;
   text-align: left;
   position: absolute;
-  left: 50vw;
+  left: 40vw;
 }
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-itme {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 span{
   display: block;
-  position: absolute;
-  bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt1{
+  left: 70vw;
+  top: 17vh;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt2{
+  left: 41vw;
+  top: 3vh;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt3{
+  left: 48vw;
+  top: 5vh;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt4{
+  left: 34vw;
+  top: -2vh;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt5{
+  left: 34vw;
+  top: -1vh;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt6{
+  left: 70vw;
+  top: -1vh;
 }
 
-/*whatwedo-i*/
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-dot {
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  border-bottom: 0;
-  left: -0px;
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .line-dot {
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .line-dot i {
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr1 {
-  background: linear-gradient(90deg, #fa6738, #79fb9e, #d9fee3) border-box;
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr2 {
-  background: linear-gradient(90deg, #fa6738, #b2bb72) border-box;
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr3 {
-  background: linear-gradient(90deg, #b2bb72, #79fb9e, #b2fdc7) border-box;
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr4 {
-  background: linear-gradient(90deg, #b2fdc7, #d9fee3) border-box;
-}
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item .cl .gr5 {
-  background: linear-gradient(90deg, #d9fee3, #ffffff) border-box;
-}
+
+
 
 /* our work */
 .work-container {
@@ -166,15 +328,15 @@
 .work-container .wrapper-txt div {
   display: block;
   width: 100%;
-  height: 30vw;
+  height: 60vw;
   position: relative;
   overflow: hidden;
 }
 .work-container .wrapper-txt .top > div {
   left: 5vw;
-  margin-top: 5vw;
-  width: 50vw;
-  height: 50vw;
+  margin-top: 25vw;
+  width: 70vw;
+  height: 70vw;
   position: relative;
   background: url(./assets/images/circle_orange.svg) center center no-repeat;
   background-size: cover;
@@ -189,9 +351,9 @@
 }
 .work-container .wrapper-txt .bottom > div {
   left: 5vw;
-  margin-top: -25vw;
-  width: 50vw;
-  height: 50vw;
+  margin-top: -30vw;
+  width: 70vw;
+  height: 70vw;
   filter: blur(20px);
   position: relative;
   background: url(./assets/images/circle_orange.svg) center center no-repeat;
@@ -199,13 +361,14 @@
 }
 .work-container .wrapper-txt .bottom h3 {
   position: absolute;
-  top: 16vw;
+  top: 13vw;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  font-size: 35px;
+  font-size: 10vw;
   text-align: center;
-  font-weight: bold;
+  font-weight: 100;
+  font-family: var(--title--font-en);
   line-height: 1.4;
   color: white;
 }
@@ -256,4 +419,29 @@
 }
 .work-container .wrapper-img .work-img-wrap .work-control a.on {
   background: #dc6e36;
+}
+
+
+
+@media (min-width: 640px) {
+
+  .work-container .wrapper-img .work-img-wrap{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    height: 50vw;
+  }
+  .work-container .wrapper-img .work-img-wrap div{
+    position: none;
+  }
+  .work-container .wrapper-img .work-img-wrap div a img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+    display: inline-block;
+  }
+  .work-container .wrapper-img .work-img-wrap .work-control{
+    display: none;
+  }
 }
