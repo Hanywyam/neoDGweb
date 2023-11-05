@@ -9,10 +9,11 @@
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- og -->
-    <meta property="title" content="수정하기">
-    <meta property="description" content="수정하기">
-    <meta property="url" content="수정하기">
-    <link rel="icon" href=".수정하기" type="수정하기">
+    <meta property="og:title" content="Team project:Ah-oh">
+    <meta property="og:description" content="[팀프로젝트:아오] 웹사이트 리디자인, 사이트 구현을 목표로 한다(반응형 웹사이트 제작) - Making homepage(neo digital group)">
+    <meta property="og:url" content="https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html">
+    <meta property="og:image" content="https://ah-oh-team-project.github.io/make_neoDG/assets/images/neo-logo.png">
+    <link rel="icon" href="./assets/images/favicon/favicon.ico" type="favicon">
 
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
@@ -101,7 +102,7 @@
                 </div>
 
                 <div class="about2-txt">
-                    <h2>Developed a creating digital business</h2>
+                    <h2><em>Developed a creating</em> digital business</h2>
                     <p>창의성과 성과를 보완할 수 있는 디지털 비지니스를 창출시키는 것이 네오 디지털 그룹의 핵심이며, 오리지널리티가 있는 디지털 활동과 높은 성과를 동시에 이룰 수 있는 비지니스
                         모델을 만드는 것을 최우선으로 합니다.</p>
                 </div>
@@ -325,16 +326,20 @@
         ----------------------------->
         <div class="contact-container">
             <div class="ctt-gradi-circle">그라디언트 원</div>
-            <form id="cttForm" name="cttForm">
-                <fieldset class="ctt-form-wrap">
-                    <legend class="ctt-title">Contact us</legend>
-                    <p><input type="text" name="contact" id="user-name" placeholder="your name"></p>
-                    <p><input type="email" name="contact" id="user-email" placeholder="your email"></p>
-                    <p><input type="text" name="contact" id="user-share" placeholder="share your thoughts"></p>
-                    <button type="submit" class="ctt-btn">send submit</button>
-                </fieldset>
-            </form>
-            <h2>Get the latest news<br> and trends.</h2>
+            <div class="contact-wrap">
+                <form id="cttForm" name="cttForm">
+                    <fieldset class="ctt-form-wrap">
+                        <legend class="ctt-title">Contact us</legend>
+                        <div class="input-wrap">
+                            <p><input type="text" name="contact" id="user-name" placeholder="your name"></p>
+                            <p><input type="email" name="contact" id="user-email" placeholder="your email"></p>
+                            <p><input type="text" name="contact" id="user-share" placeholder="share your thoughts"></p>
+                        </div>
+                        <button type="submit" class="ctt-btn">send submit</button>
+                    </fieldset>
+                </form>
+                <h2>Get the latest news<br> and trends.</h2>
+            </div>
         </div>
     </main>
 
@@ -425,7 +430,7 @@
                 2) circle이 2/3까지 채워졌을 때 txtBox title 등장
                 3) circle의 사이즈가 줄어들면서 txtBox p 등장. 사이즈 화면 30% 정도
                 4) circle이 top에 도착했을때 모든 txtBox 등장 완료.
-                5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 */
+                5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 
 
         const ani3 = gsap.timeline();
         ani3.from(".about2-wrap .gradi-circle", { scale: 20, y: 500, autoAlpha: 1 });
@@ -440,7 +445,7 @@
             anticipatePin: 1,
             // markers: true,
         });
-
+        */
     </script>
 </body>
 
