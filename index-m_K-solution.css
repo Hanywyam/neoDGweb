@@ -4,6 +4,7 @@
     background-color: #000;
     color: #fff;
     width: 100%;
+    font-family: var(--main--font--en);
   }
   .solution-container .video1 {
     background: url(./assets/images/wave.svg) no-repeat;
@@ -70,14 +71,14 @@
     height: 100vh;
   }
   .solution-wrap1 p {
-    font-size: 11.7px;
+    font-size: 0.731rem;
   }
   .solution-wrap1 h5 {
-    font-size: 19.5px;
+    font-size: 1.219rem;
   }
   .solution-wrap1 h3 {
     position: relative;
-    font-size: 31.2px;
+    font-size: 1.950rem;
     margin-left: 20px;
   }
   .solution-wrap1 .solution1-txt1 {
@@ -112,7 +113,7 @@
   }
   .solution-wrap2 h5,
   span {
-    font-size: 11.7px;
+    font-size: 0.731rem;
     width: 80px;
     margin-left: 15px;
     margin-right: 5px;
@@ -121,9 +122,8 @@
     color: #fa6738;
   }
   .solution-wrap2 p {
-    font-size: 9.75px;
+    font-size: 0.609rem;
     text-align: left;
-    margin-right: 30px;
   }
   .solution-wrap2 .solution2-txt1-1 {
     text-align: left;
@@ -136,12 +136,12 @@
     margin-left: 0;
   }
   .numbers-txt h3 {
-    font-size: 19.5px;
+    font-size: 1.219rem;
     padding-left: 20px;
     margin-bottom: 10px;
   }
   .numbers-txt p {
-    font-size: 11.7px;
+    font-size: 0.731rem;
     width: 330px;
     padding-left: 20px;
   }

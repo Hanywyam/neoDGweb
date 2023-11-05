@@ -1,15 +1,23 @@
 @charset "utf-8";
-@media (width <= 760px) {
+@media (width <= 640px) {
   .header-wrapper {
     color: #fff;
     background-color: #000;
     height: 100vh;
+    font-family: var(--title--font-en);
   }
   #mouse-over-label:active ~ .menubars {
     display: block;
+    z-index: 99999px;
+  
+  }
+  #mouse-over-label:checked ~.menubars {
+    display: block;
+    z-index: 99999px;
   }
   .menubars {
     display: none;
+    z-index: 99999px;
   }
   .menubars {
     position: relative;
@@ -24,8 +32,10 @@
     padding: 10px;
     text-align: center;
     width: 100%;
+
   }
   .header-menu {
+    z-index: 9999px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -39,7 +49,7 @@
     cursor: pointer;
   }
   .header h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 200;
   }
   .main {
@@ -49,7 +59,7 @@
     left: 80px;
   }
   .main h2 {
-    font-size: 40px;
+    font-size: 3rem;
     margin: 0;
   }
   .circle1 span {
@@ -63,5 +73,5 @@
     background: linear-gradient(-90deg, #79fb9e, rgba(121, 251, 158, 0));
     animation: circle_move 22s linear infinite;
   }
-  
+ 
 }

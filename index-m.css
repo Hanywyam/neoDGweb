@@ -11,6 +11,97 @@ body {
   background-color: var(--bg-color); */
 }
 
+
+
+/* header 
+-----------------------------> */
+.header-wrapper {
+  color: #fff;
+  background-color: #000;
+  height: 100vh;
+  font-family: var(--title--font-en);
+}
+
+#mouse-over-label:active~.menubars {
+  display: block;
+  z-index: 99999px;
+
+}
+
+#mouse-over-label:checked~.menubars {
+  display: block;
+  z-index: 99999px;
+}
+
+.menubars {
+  display: none;
+  z-index: 99999px;
+}
+
+.menubars {
+  position: relative;
+  top: 150px;
+  right: 50px;
+}
+
+.menubars li {
+  font-size: 2rem;
+  position: relative;
+  top: 150px;
+  right: 50px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+
+}
+
+.header-menu {
+  z-index: 9999px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.header-menu img {
+  width: 30px;
+  position: absolute;
+  right: 2px;
+  cursor: pointer;
+}
+
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.main {
+  color: #fff;
+  position: absolute;
+  top: 350px;
+  left: 80px;
+}
+
+.main h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.circle1 span {
+  text-indent: -9999px;
+  border-radius: 50%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 500px;
+  background: linear-gradient(-90deg, #79fb9e, rgba(121, 251, 158, 0));
+  animation: circle_move 22s linear infinite;
+}
+
+
+
 /* main1: about us 
 -----------------------------> */
 .about-container {
@@ -154,6 +245,205 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+/*  main2: solution
+-----------------------------> */
+.solution-container {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  font-family: var(--main--font--en);
+}
+
+.solution-container .video1 {
+  background: url(./assets/images/wave.svg) no-repeat;
+  position: relative;
+  top: 160px;
+  margin: 0;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+
+  /* keyframe */
+  from {
+    right: 50px;
+  }
+
+  /* keyframe */
+  to {
+    top: 30px;
+  }
+}
+
+.solution-container .video2 {
+  background: url(./assets/images/wave.svg) no-repeat;
+  position: relative;
+  bottom: 50px;
+  animation-name: move1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+
+  /* keyframe */
+  from {
+    left: 0;
+  }
+
+  /* keyframe */
+  to {
+    bottom: 120px;
+  }
+}
+
+.solution-container .video3 {
+  background: url(./assets/images/wave.svg) no-repeat;
+  position: relative;
+  bottom: 200px;
+  margin: 0;
+  animation-name: move2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move2 {
+
+  /* keyframe */
+  from {
+    right: 50px;
+  }
+
+  /* keyframe */
+  to {}
+}
+
+.solution-wrap1 {
+  height: 80vh;
+  position: relative;
+  bottom: 500px;
+}
+
+.solution-wrap2 {
+  height: 100vh;
+}
+
+.solution-wrap1 p {
+  font-size: 0.731rem;
+}
+
+.solution-wrap1 h5 {
+  font-size: 1.219rem;
+}
+
+.solution-wrap1 h3 {
+  position: relative;
+  font-size: 1.950rem;
+  margin-left: 20px;
+}
+
+.solution-wrap1 .solution1-txt1 {
+  position: relative;
+  top: 140px;
+  left: 60px;
+  width: 60px;
+}
+
+.solution-wrap1 .solution1-txt2 {
+  position: relative;
+  left: 150px;
+  top: 10px;
+  width: 130px;
+}
+
+.solution-wrap1 .solution1-txt3 {
+  position: relative;
+  bottom: 120px;
+  left: 270px;
+  width: 120px;
+}
+
+.numbers-txt {
+  position: relative;
+  bottom: 150px;
+}
+
+.solution-wrap2 .solution2-txt1,
+.solution2-txt2,
+.solution2-txt3 {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  top: 300px;
+}
+
+.solution-wrap2 h5,
+span {
+  font-size: 0.731rem;
+  width: 80px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.solution-wrap2 span {
+  color: #fa6738;
+}
+
+.solution-wrap2 p {
+  font-size: 0.609rem;
+  text-align: left;
+}
+
+.solution-wrap2 .solution2-txt1-1 {
+  text-align: left;
+}
+
+.solution-wrap2 .solution2-txt1-2 {
+  text-align: left;
+}
+
+.solution-wrap2 .solution2-txt1-3 {
+  text-align: left;
+  margin-left: 0;
+}
+
+.numbers-txt h3 {
+  font-size: 1.219rem;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.numbers-txt p {
+  font-size: 0.731rem;
+  width: 330px;
+  padding-left: 20px;
+}
+
+.global-mp4 {
+  position: relative;
+  top: 200px;
+  left: 150px;
+}
+
+.solution-container img {
+  position: relative;
+  top: 350px;
+}
+
+.solution-wrap2 .global-mp4 video {
+  width: 50%;
+  position: relative;
+  right: 50px;
+  bottom: 100px;
+
+}
+
+
 
 /*  main3: what we do
 -----------------------------> */
@@ -488,7 +778,7 @@ body {
 
 
 
-/*  main3: our work
+/*  main4: our work
 -----------------------------> */
 .work-container {
   background-color: black;
@@ -601,6 +891,8 @@ body {
   background: #dc6e36;
 }
 
+
+
 /* main5: contact us 
 ----------------------------- */
 .contact-container {
@@ -681,4 +973,105 @@ body {
   width: 80%;
   margin: 50px auto 0;
   padding-bottom: 150px;
+}
+
+
+
+/* footer
+----------------------------- */
+.footer-container {
+  background-color: #000;
+  height: 60vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  font-family: var(----title--font-en);
+}
+
+.footer-container p {
+  color: #ffffff80;
+  font-size: 1.125rem;
+}
+
+.footer-container .text1 {
+  margin-right: 120px;
+}
+
+.footer-container .text1 span {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.footer-container .text2 {
+  margin-bottom: 20px;
+}
+
+.footer-container .text2 p {
+  margin-bottom: 10px;
+  margin-left: 12px;
+  font-size: 1.125rem;
+}
+
+.footer-container .text2 span {
+  margin-bottom: 20px;
+  font-size: 0.976rem;
+}
+
+.footer-container .text3 {
+  position: relative;
+  bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-container .text3 p {
+  margin-left: 14px;
+  font-size: 1.125rem;
+}
+
+.footer-container .text3 span {
+  font-size: 0.976rem;
+  margin-bottom: 10px;
+}
+
+.footer-container .text4 {
+  position: relative;
+  bottom: 40px;
+  text-align: left;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .text4 p {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.footer-container .text4 span {
+  position: relative;
+  right: 15px;
+  font-size: 0.976rem;
+  width: 150px;
+}
+
+.footer-container .footer {
+  position: relative;
+  bottom: 40px;
+  margin-left: 20px;
+  right: 5px;
+}
+
+.footer-container .footer p {
+  font-size: 11.7px;
+  color: #79fb9e80;
+  margin-bottom: 16px;
+  font-size: 0.733rem;
+}
+
+.footer-container .footer span {
+  font-size: 0.813rem;
+  color: #ffffff80;
+  margin: 0;
 }
