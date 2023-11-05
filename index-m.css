@@ -189,8 +189,6 @@ body {
 }
 
 .about1-wrap .about1-bg .gradi-circle {
-  width: 40vw;
-  height: 40vw;
   position: absolute;
   top: -180px;
   opacity: 0;
@@ -219,17 +217,16 @@ body {
 }
 
 .about2-bg .gradi-circle {
-  width: 90vw;
-  height: 90vw;
-
   position: absolute;
-  top: -12%;
-  right: -25%;
+  top: 0;
+  right: 20%;
   /* opacity: 0; */
 }
 
 /* main1: about1+2 circle setting */
 .about-container .gradi-circle {
+  width: 40vw;
+  height: 40vw;
   text-indent: -99999px;
   border-radius: 50%;
   background: radial-gradient(at 65% 40%, #10782e, #59c076, #7de69b);

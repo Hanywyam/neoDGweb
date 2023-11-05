@@ -62,6 +62,11 @@
         #000 100%);
   }
 
+  .about2-wrap .gradi-circle {
+    top: -20%;
+    left: 56%;
+  }
+
   /* main5: contact us 
   ----------------------------- */
   .contact-container {
@@ -145,8 +150,6 @@
   }
 
   .about2-bg .gradi-circle {
-    width: 50vw;
-    height: 50vw;
     top: -43vw;
     right: 6vw;
   }
