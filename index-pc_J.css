@@ -12,11 +12,9 @@
   display: none;
 } */
 
-
 /* 미디어쿼리 (width >= 640px)
 -----------------------------> */
 @media (min-width: 640px) {
-
   /* main1: about us 
   -----------------------------> */
   /* main1: about1+2 text setting */
@@ -54,12 +52,13 @@
 
   /* main2: 배경 설정 */
   .about2-wrap {
-    background: linear-gradient(#fff 0%,
-        /* rgba(62, 214, 105, 0.677083) 10%, */
-        rgba(34, 221, 87, 0.624186) 15%,
-        rgba(16, 120, 46, 1) 60%,
-        rgba(0, 0, 0, 0.9) 95%,
-        #000 100%);
+    background: linear-gradient(
+      #fff 0%,
+      /* rgba(62, 214, 105, 0.677083) 10%, */ rgba(34, 221, 87, 0.624186) 15%,
+      rgba(16, 120, 46, 1) 60%,
+      rgba(0, 0, 0, 0.9) 95%,
+      #000 100%
+    );
   }
 
   .about2-wrap .gradi-circle {
@@ -79,7 +78,7 @@
     font-weight: 300;
   }
 
-  .contact-wrap>h2 {
+  .contact-wrap > h2 {
     font-size: 3rem;
   }
 
@@ -92,7 +91,6 @@
     font-weight: 400;
   }
 }
-
 
 /* 미디어쿼리 (width >= 1200px)
 -----------------------------> */
@@ -168,11 +166,35 @@
   .contact-wrap {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    flex-flow: column;
+    position: relative;
   }
 
-  contact-wrap .ctt-form-wrap {
-    /* flex-flow: row-reverse; */
+  .contact-wrap .ctt-form-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5vw;
+    margin: 5vw 0;
+  }
+
+  .contact-wrap .ctt-form-wrap .ctt-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin: 15vh 15vw 0;
+    font-size: 6rem;
+  }
+  .contact-wrap .ctt-form-wrap .input-wrap {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .contact-wrap .ctt-form-wrap .ctt-btn {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .contact-wrap h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
   }
 }

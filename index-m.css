@@ -93,10 +93,11 @@ body {
 }
 
 .circle1 span {
+  filter: blur(50px);
   text-indent: -9999px;
   border-radius: 50%;
   display: block;
-  width: 200px;
+  width: 50%;
   height: 200px;
   position: relative;
   bottom: 300px;
@@ -106,7 +107,7 @@ body {
     rgba(189, 93, 4, 0.658),
     rgba(542, 548, 211) ;
   );
-  animation: circle_move 15s linear infinite alternate;
+  animation: circle_move 20s linear infinite alternate;
 }
 @keyframes circle_move {
   0% {
@@ -116,11 +117,11 @@ body {
     left: 120px;
   }
   50% {
-    bottom: 50px;
+    bottom: 250px;
     background-color: #79fb9e;
   }
   70% {
-    bottom: 150px;
+    bottom: 280px;
     background-color: rgba(
       rgb(255, 38, 0),
       rgb(128, 19, 0),
@@ -1073,4 +1074,3 @@ span {
   color: #ffffff80;
   margin: 0;
 }
->>>>>>> 3782f4fb6251f41c243ca0853cdaf12f80dbc67c
