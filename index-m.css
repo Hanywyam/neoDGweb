@@ -19,13 +19,13 @@ body {
   color: #fff;
   background-color: #000;
   height: 100vh;
-  font-family: var(--title--font-en);
+  font-family: var(--main--font--en);
 }
 
 #mouse-over-label:active~.menubars {
   display: block;
   z-index: 99999px;
-
+  background-color: #259345;
 }
 
 #mouse-over-label:checked~.menubars {
@@ -57,11 +57,11 @@ body {
 
 .header-menu {
   z-index: 9999px;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  padding-left: 10px;
 }
 
 .header-menu img {
@@ -71,9 +71,10 @@ body {
   cursor: pointer;
 }
 
-.header h1 {
-  font-size: 1.25rem;
+.header-menu h1 {
+  font-size: 1.5rem;
   font-weight: 200;
+  font-family: var(--main--font-en);
 }
 
 .main {
@@ -86,6 +87,8 @@ body {
 .main h2 {
   font-size: 3rem;
   margin: 0;
+  font-weight: bold;
+  line-height: normal;
 }
 
 .circle1 span {
@@ -189,6 +192,8 @@ body {
 }
 
 .about1-wrap .about1-bg .gradi-circle {
+  width: 40vw;
+  height: 40vw;
   position: absolute;
   top: -180px;
   opacity: 0;
@@ -217,16 +222,17 @@ body {
 }
 
 .about2-bg .gradi-circle {
+  width: 90vw;
+  height: 90vw;
+
   position: absolute;
-  top: 0;
-  right: 20%;
+  top: -12%;
+  right: -25%;
   /* opacity: 0; */
 }
 
 /* main1: about1+2 circle setting */
 .about-container .gradi-circle {
-  width: 40vw;
-  height: 40vw;
   text-indent: -99999px;
   border-radius: 50%;
   background: radial-gradient(at 65% 40%, #10782e, #59c076, #7de69b);
@@ -321,7 +327,7 @@ body {
 }
 
 .solution-wrap1 {
-  height: 80vh;
+  height: 100vh;
   position: relative;
   bottom: 500px;
 }
@@ -367,7 +373,7 @@ body {
 
 .numbers-txt {
   position: relative;
-  bottom: 150px;
+  font-family: var(--main--font--en);
 }
 
 .solution-wrap2 .solution2-txt1,
@@ -376,7 +382,7 @@ body {
   display: flex;
   margin-bottom: 20px;
   position: relative;
-  top: 300px;
+  top: 250px;
 }
 
 .solution-wrap2 h5,
@@ -1051,6 +1057,7 @@ span {
   right: 15px;
   font-size: 0.976rem;
   width: 150px;
+  white-space: break-all;
 }
 
 .footer-container .footer {
