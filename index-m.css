@@ -11,8 +11,6 @@ body {
   background-color: var(--bg-color); */
 }
 
-
-
 /* header 
 -----------------------------> */
 .header-wrapper {
@@ -22,13 +20,13 @@ body {
   font-family: var(--main--font--en);
 }
 
-#mouse-over-label:active~.menubars {
+#mouse-over-label:active ~ .menubars {
   display: block;
   z-index: 99999px;
   background-color: #259345;
 }
 
-#mouse-over-label:checked~.menubars {
+#mouse-over-label:checked ~ .menubars {
   display: block;
   z-index: 99999px;
 }
@@ -52,7 +50,6 @@ body {
   padding: 10px;
   text-align: center;
   width: 100%;
-
 }
 
 .header-menu {
@@ -103,7 +100,13 @@ body {
   animation: circle_move 22s linear infinite;
 }
 
-
+/* scroll background-color
+----------------------------- */
+.scroll-bg {
+  height: 100vh;
+  background-color: #666;
+  transition: 0.5s;
+}
 
 /* main1: about us 
 -----------------------------> */
@@ -213,12 +216,13 @@ body {
 .about2-wrap {
   height: 100vh;
   position: relative;
-  background: linear-gradient(#fff 0%,
-      /* rgba(62, 214, 105, 0.677083) 10%, */
-      rgba(34, 221, 87, 0.624186) 15%,
-      rgba(16, 120, 46, 1) 50%,
-      rgba(0, 0, 0, 0.9) 90%,
-      #000 100%);
+  background: linear-gradient(
+    #fff 0%,
+    /* rgba(62, 214, 105, 0.677083) 10%, */ rgba(34, 221, 87, 0.624186) 15%,
+    rgba(16, 120, 46, 1) 50%,
+    rgba(0, 0, 0, 0.9) 90%,
+    #000 100%
+  );
 }
 
 .about2-bg .gradi-circle {
@@ -249,8 +253,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
-
 /*  main2: solution
 -----------------------------> */
 .solution-container {
@@ -271,7 +273,6 @@ body {
 }
 
 @keyframes move {
-
   /* keyframe */
   from {
     right: 50px;
@@ -293,7 +294,6 @@ body {
 }
 
 @keyframes move1 {
-
   /* keyframe */
   from {
     left: 0;
@@ -316,14 +316,14 @@ body {
 }
 
 @keyframes move2 {
-
   /* keyframe */
   from {
     right: 50px;
   }
 
   /* keyframe */
-  to {}
+  to {
+  }
 }
 
 .solution-wrap1 {
@@ -346,7 +346,7 @@ body {
 
 .solution-wrap1 h3 {
   position: relative;
-  font-size: 1.950rem;
+  font-size: 1.95rem;
   margin-left: 20px;
 }
 
@@ -443,10 +443,7 @@ span {
   position: relative;
   right: 50px;
   bottom: 100px;
-
 }
-
-
 
 /*  main3: what we do
 -----------------------------> */
@@ -779,8 +776,6 @@ span {
   top: -1vh;
 }
 
-
-
 /*  main4: our work
 -----------------------------> */
 .work-container {
@@ -796,7 +791,7 @@ span {
   overflow: hidden;
 }
 
-.work-container .wrapper-txt .top>div {
+.work-container .wrapper-txt .top > div {
   left: 5vw;
   margin-top: 25vw;
   width: 70vw;
@@ -806,7 +801,7 @@ span {
   background-size: cover;
 }
 
-.work-container .wrapper-txt .top>div::after {
+.work-container .wrapper-txt .top > div::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -815,7 +810,7 @@ span {
   background: linear-gradient(to bottom, #000 0%, transparent 50%);
 }
 
-.work-container .wrapper-txt .bottom>div {
+.work-container .wrapper-txt .bottom > div {
   left: 5vw;
   margin-top: -30vw;
   width: 70vw;
@@ -853,7 +848,7 @@ span {
   margin: 0 auto;
 }
 
-.work-container .wrapper-img .work-img-wrap>div {
+.work-container .wrapper-img .work-img-wrap > div {
   position: absolute;
   left: 0;
   top: 0;
@@ -868,7 +863,7 @@ span {
   display: inline-block;
 }
 
-.work-container .wrapper-img .work-img-wrap>div.on {
+.work-container .wrapper-img .work-img-wrap > div.on {
   opacity: 1;
 }
 
@@ -894,8 +889,6 @@ span {
   background: #dc6e36;
 }
 
-
-
 /* main5: contact us 
 ----------------------------- */
 .contact-container {
@@ -911,10 +904,12 @@ span {
   width: 100vw;
   height: 70vw;
   border-radius: 50%;
-  background: radial-gradient(40% 32% at 75% 75%,
-      rgba(62, 214, 105, 0.677083) 0%,
-      rgba(34, 221, 87, 0.624186) 29.17%,
-      rgba(62, 214, 105, 0) 100%);
+  background: radial-gradient(
+    40% 32% at 75% 75%,
+    rgba(62, 214, 105, 0.677083) 0%,
+    rgba(34, 221, 87, 0.624186) 29.17%,
+    rgba(62, 214, 105, 0) 100%
+  );
 
   position: relative;
   right: 35vw;
@@ -970,15 +965,13 @@ span {
   transition: 0.5s;
 }
 
-.contact-wrap>h2 {
+.contact-wrap > h2 {
   font-family: var(--title--font-en);
   font-size: 2em;
   width: 80%;
   margin: 50px auto 0;
   padding-bottom: 150px;
 }
-
-
 
 /* footer
 ----------------------------- */
