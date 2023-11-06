@@ -152,11 +152,16 @@
     right: 6vw;
   }
 
+  /* main5: 컨텐츠 정렬 */
   .contact-container {
+    height: 100vh;
+    padding-top: 120px;
+  }
+  .contact-container .gradi-circle-wrap {
     position: relative;
   }
 
-  .contact-container .ctt-gradi-circle {
+  .contact-container .gradi-circle-wrap .ctt-gradi-circle {
     position: absolute;
     top: -30vw;
     left: 0;
