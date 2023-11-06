@@ -87,6 +87,10 @@ body {
   font-weight: bold;
   line-height: normal;
 }
+.circle1 {
+  position: relative;
+  bottom: 200px;
+}
 
 .circle1 span {
   text-indent: -9999px;
@@ -95,17 +99,42 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
-  bottom: 500px;
-  background: linear-gradient(-90deg, #79fb9e, rgba(121, 251, 158, 0));
-  animation: circle_move 22s linear infinite;
+  bottom: 300px;
+  background: radial-gradient(
+    -90deg,
+    #79fb9e,
+    rgba(189, 93, 4, 0.658),
+    rgba(542, 548, 211) ;
+  );
+  animation: circle_move 15s linear infinite alternate;
 }
-
-/* scroll background-color
------------------------------ */
-.scroll-bg {
-  height: 100vh;
-  background-color: #666;
-  transition: 0.5s;
+@keyframes circle_move {
+  0% {
+    left: 10px;
+  }
+  30% {
+    left: 120px;
+  }
+  50% {
+    bottom: 50px;
+    background-color: #79fb9e;
+  }
+  70% {
+    bottom: 150px;
+    background-color: rgba(
+      rgb(255, 38, 0),
+      rgb(128, 19, 0),
+      rgba(255, 121, 98, 0.753)
+    );
+  }
+  80% {
+    left: 120px;
+    background-color: tomato;
+  }
+  100% {
+    left: 10px;
+    background-color: salmon;
+  }
 }
 
 /* main1: about us 
@@ -262,76 +291,47 @@ body {
   font-family: var(--main--font--en);
 }
 
-.solution-container .video1 {
-  background: url(./assets/images/wave.svg) no-repeat;
-  position: relative;
-  top: 160px;
-  margin: 0;
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes move {
-  /* keyframe */
-  from {
-    right: 50px;
-  }
-
-  /* keyframe */
-  to {
-    top: 30px;
-  }
-}
-
-.solution-container .video2 {
-  background: url(./assets/images/wave.svg) no-repeat;
-  position: relative;
-  bottom: 50px;
-  animation-name: move1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes move1 {
-  /* keyframe */
-  from {
-    left: 0;
-  }
-
-  /* keyframe */
-  to {
-    bottom: 120px;
-  }
-}
-
-.solution-container .video3 {
-  background: url(./assets/images/wave.svg) no-repeat;
-  position: relative;
-  bottom: 200px;
-  margin: 0;
-  animation-name: move2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes move2 {
-  /* keyframe */
-  from {
-    right: 50px;
-  }
-
-  /* keyframe */
-  to {
-  }
-}
-
 .solution-wrap1 {
   height: 100vh;
   position: relative;
   bottom: 500px;
 }
-
+video {
+  background: url(./assets/images/wave.svg) no-repeat;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: relative;
+}
+.video1 {
+  top: 80px;
+  animation: wave 8s linear infinite alternate;
+  transform: rotate(-37deg);
+}
+@keyframes wave {
+  to {
+    background-position: 1200px 130%, 6150px 130%, 150px 180%;
+  }
+}
+.video2 {
+  bottom: 120px;
+  animation: wave1 8s linear infinite alternate-reverse;
+  transform: rotate(-30deg);
+}
+@keyframes wave1 {
+  to {
+    background-position: 1500px 130%, 6550px 130%, 150px 100%;
+  }
+}
+.video3 {
+  bottom: 280px;
+  animation: wave2 8s linear infinite alternate-reverse;
+  transform: rotate(-40deg);
+}
+@keyframes wave2 {
+  to {
+    background-position: 1200px 130%, 6000px 130%, 180px 130%;
+  }
+}
 .solution-wrap2 {
   height: 100vh;
 }
@@ -348,11 +348,12 @@ body {
   position: relative;
   font-size: 1.95rem;
   margin-left: 20px;
+  bottom: 250px;
+  font-family: var(--title--font-en);
 }
 
 .solution-wrap1 .solution1-txt1 {
   position: relative;
-  top: 140px;
   left: 60px;
   width: 60px;
 }
@@ -360,13 +361,13 @@ body {
 .solution-wrap1 .solution1-txt2 {
   position: relative;
   left: 150px;
-  top: 10px;
+  bottom: 140px;
   width: 130px;
 }
 
 .solution-wrap1 .solution1-txt3 {
   position: relative;
-  bottom: 120px;
+  bottom: 260px;
   left: 270px;
   width: 120px;
 }
@@ -1072,3 +1073,4 @@ span {
   color: #ffffff80;
   margin: 0;
 }
+>>>>>>> 3782f4fb6251f41c243ca0853cdaf12f80dbc67c
