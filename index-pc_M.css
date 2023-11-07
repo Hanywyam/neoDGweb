@@ -2,14 +2,93 @@
 
 @media (min-width: 640px) {
   /* whatwedo */
-  .whatwedo-container .whatwedo-graph .graph-line {
-    transform: rotate(-90deg);
+  :root {
+    --width1: 60vw;
+  }
+  .whatwedo-container .whatwedo-graph {
+    z-index: 2;
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    height: 1px;
+    transform: translateX(-50%);
   }
   .whatwedo-container .whatwedo-graph .whatwedo-line {
-    transform: rotate(-90deg);
-    top: -20px;
-    left: 775px;
-    width: 80vw;
+    width: 100vw;
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 {
+    font-size: 14px;
+    left: 0;
+    bottom: -75px;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    transform: rotate(360deg);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 span {
+    line-height: 18px;
+    height: calc(18px * 2);
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4.point{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: calc(var(--width1) / -7 * 6 / 2 + 30px);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 {
+    font-size: 28px;
+    margin-top: -65px;
+    text-align: center;
+    font-weight: 400;
+    transform: rotate(360deg);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2{
+    width: calc(var(--width1) / 7 * 2);
+    height: calc(var(--width1) / 7 * 2 / 2);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2 i {
+    width: calc((var(--width1) / 7 * 2) - 2px);
+    height: calc((var(--width1) / 7 * 2 / 2) - 2px);
+    border-top-left-radius: calc((var(--width1) / 7 * 2 / 2));
+    border-top-right-radius: calc((var(--width1) / 7 * 2 / 2));
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w3{
+    width: calc(var(--width1) / 7 * 3);
+    height: calc(var(--width1) / 7 * 3 / 2 + 15px);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w3 i{
+    width: calc(var(--width1) / 7 * 3 - 2px);
+    height: calc(var(--width1) / 7 * 3 / 2 - 2px);
+    border-top-left-radius: calc(var(--width1) / 7 * 3 / 2);
+    border-top-right-radius: calc(var(--width1) / 7 * 3 / 2);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w6{
+    width: calc(var(--width1) / 7 * 6);
+    height: calc(var(--width1) / 7 * 6 / 2 + 80px);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w6 i{
+    width: calc(var(--width1) / 7 * 6 - 2px);
+    height: calc(var(--width1) / 7 * 6 / 2 - 2px);
+    border-top-left-radius: calc(var(--width1) / 7 * 6 / 2);
+    border-top-right-radius: calc(var(--width1) / 7 * 6 / 2);
+  }
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr4,
+  .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr5
+  {
+    height: calc(var(--width1) / 7 * 6 / 2 - 80px);
+  }
   }
 
   /* work */

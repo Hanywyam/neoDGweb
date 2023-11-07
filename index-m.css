@@ -13,6 +13,9 @@ body {
 
 /* header 
 -----------------------------> */
+.logo {
+  margin-top: 20px;
+}
 .header-wrapper {
   color: #fff;
   background-color: #000;
@@ -22,31 +25,20 @@ body {
 
 #mouse-over-label:active ~ .menubars {
   display: block;
-  z-index: 99999px;
-  background-color: #259345;
-}
-
-#mouse-over-label:checked ~ .menubars {
-  display: block;
-  z-index: 99999px;
+  z-index: 99999;
 }
 
 .menubars {
+  top: 200px;
   display: none;
-  z-index: 99999px;
-}
-
-.menubars {
-  position: relative;
-  top: 150px;
-  right: 50px;
 }
 
 .menubars li {
+  text-align: center;
   font-size: 2rem;
   position: relative;
   top: 150px;
-  right: 50px;
+  left: 80px;
   padding: 10px;
   text-align: center;
   width: 100%;
@@ -59,6 +51,12 @@ body {
   position: fixed;
   width: 100%;
   padding-left: 10px;
+  animation: jaes 5s;
+}
+@keyframes jaes {
+  0% {
+    bottom: 1200px;
+  }
 }
 
 .header-menu img {
@@ -68,17 +66,12 @@ body {
   cursor: pointer;
 }
 
-.header-menu h1 {
-  font-size: 1.5rem;
-  font-weight: 200;
-  font-family: var(--main--font-en);
-}
-
 .main {
   color: #fff;
   position: absolute;
   top: 350px;
   left: 80px;
+  animation: mins 6s;
 }
 
 .main h2 {
@@ -86,6 +79,11 @@ body {
   margin: 0;
   font-weight: bold;
   line-height: normal;
+}
+@keyframes mins {
+  0% {
+    top: -1000px;
+  }
 }
 .circle1 {
   position: relative;
@@ -100,14 +98,14 @@ body {
   width: 50%;
   height: 200px;
   position: relative;
-  bottom: 300px;
+  top: 500px;
   background: radial-gradient(
     -90deg,
     #79fb9e,
     rgba(189, 93, 4, 0.658),
     rgba(542, 548, 211) ;
   );
-  animation: circle_move 20s linear infinite alternate;
+  animation: circle_move 22s linear infinite alternate;
 }
 @keyframes circle_move {
   0% {
@@ -117,7 +115,7 @@ body {
     left: 120px;
   }
   50% {
-    bottom: 250px;
+    top: 700px;
     background-color: #79fb9e;
   }
   70% {
@@ -452,307 +450,278 @@ span {
 .whatwedo-container {
   position: relative;
   background-color: black;
-  height: 150vh;
+  height: 100vh;
   color: white;
   overflow: hidden;
 }
 
 .whatwedo-container .whatwedo-wrap {
-  padding: 150px 20px;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  top: 15vh;
+  left: 4vw;
+  transform: translateX(0%);
 }
 
 .whatwedo-container .whatwedo-wrap h3 {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding-bottom: 2vw;
-  font-family: var(--title--font-en);
+  white-space: nowrap;
+  color: #fff;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 400;
   font-size: 5vw;
   line-height: 1;
-  color: #ffffff;
-  margin: 0;
+  top: 0;
+  text-align: left;
+  padding-bottom: 2vw;
+  padding-right: 0px;
 }
 
 .whatwedo-container .whatwedo-wrap h3 span {
   padding-top: 1.5vw;
   font-size: 3vw;
   text-align: left;
+  display: block;
   margin: 0;
-  font-family: var(--main--font--en);
 }
 
 .whatwedo-container .whatwedo-wrap p {
-  display: block;
-  line-height: 1.6;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
   font-size: 3vw;
-  text-align: left;
-  font-family: var(--main--font--en);
+  line-height: 1.6;
   font-weight: 200;
+  top: 0;
 }
 
 /* what we do graph */
 .whatwedo-container .whatwedo-graph {
-  padding: 10px 20px;
-  width: 100%;
-  position: relative;
-}
-
-/* 그래프 라인 */
-.whatwedo-container .whatwedo-graph .graph-line {
+  z-index: 2;
   position: absolute;
-  left: 72vw;
-  transform: translateX(-50%) rotate(90deg);
+  top: 65vh;
+  left: 50%;
+  transform: translateX(-70%) rotate(90deg);
 }
-
-.whatwedo-container .whatwedo-graph .graph-line .gr1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 326px;
-  height: 163px;
-  border: 2px solid transparent;
-  border-radius: 163px 163px 0 0;
-  border-bottom: none;
-  background-image: linear-gradient(#000000, #000000),
-    linear-gradient(90deg, #fa6738, #79fb9e, #d9fee3);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr2 {
-  position: absolute;
-  top: 110px;
-  left: 0vw;
-  width: 110px;
-  height: 55px;
-  border: 2px solid transparent;
-  border-radius: 55px 55px 0 0;
-  border-bottom: none;
-  background-image: linear-gradient(#000000, #000000),
-    linear-gradient(90deg, #fa6738, #b2bb72);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr2-1 {
-  position: absolute;
-  top: 135px;
-  width: 56px;
-  height: 28px;
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 28px 28px 0 0;
-  border-bottom: none;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr3 {
-  position: absolute;
-  top: 83px;
-  left: 108px;
-  width: 164px;
-  height: 82px;
-  border: 2px solid transparent;
-  border-radius: 82px 82px 0 0;
-  border-bottom: none;
-  background-image: linear-gradient(#000000, #000000),
-    linear-gradient(90deg, #b2bb72, #79fb9e, #b2fdc7);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr3-1 {
-  position: absolute;
-  top: 135px;
-  left: 108px;
-  width: 56px;
-  height: 28px;
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 28px 28px 0 0;
-  border-bottom: none;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr3-2 {
-  position: absolute;
-  top: 105px;
-  left: 108px;
-  width: 110px;
-  height: 55px;
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 55px 55px 0 0;
-  border-bottom: none;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr4 {
-  position: absolute;
-  top: 136px;
-  left: 270px;
-  width: 56px;
-  height: 28px;
-  border: 2px solid transparent;
-  border-radius: 28px 28px 0 0;
-  border-bottom: none;
-  background-image: linear-gradient(#000000, #000000),
-    linear-gradient(90deg, #b2fdc7, #d9fee3);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.whatwedo-container .whatwedo-graph .graph-line .gr5 {
-  position: absolute;
-  top: 136px;
-  left: 323px;
-  width: 56px;
-  height: 28px;
-  border: 2px solid transparent;
-  border-radius: 28px 28px 0 0;
-  border-bottom: none;
-  background-image: linear-gradient(#000000, #000000),
-    linear-gradient(90deg, #d9fee3, #ffffff);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-/* 도트 모양 
-.whatwedo-container .whatwedo-graph .graph-dots {
-  position: absolute;
-  top: -43vh;
-  left: 90vw;
-  transform: rotate(90deg);
-}
-
-.whatwedo-container .whatwedo-graph .graph-dots .dot {
-  border-radius: 50%;
-  content: "";
-  width: 7px;
-  height: 7px;
-  z-index: 1;
-  background: #fff;
-  margin-bottom: 12vw;
-}
-
-/* 화살표 모양 
-.whatwedo-container .whatwedo-graph .graph-arrow {
-  position: absolute;
-  top: -37.5vh;
-  left: 80vw;
-  transform: rotate(90deg);
-}
-
-.whatwedo-container .whatwedo-graph .graph-arrow .arw {
-  content: "";
-  margin-bottom: 12vw;
-  width: 6px;
-  height: 7px;
-  background: url("./assets/images/arrow1.svg");
-  transform: rotate(-90deg);
-}*/
 
 /* 그래프 점선 기본 라인 */
 .whatwedo-container .whatwedo-graph .whatwedo-line {
-  position: absolute;
-  left: 30%;
-  transform: translateX(-50%) rotate(90deg);
+  position: relative;
+  bottom: -1px;
+  left: px;
+  width: 100vw;
+  height: 1px;
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-line div {
-  position: absolute;
-  top: 0;
+  position: relative;
+  width: 100%;
   left: 0;
-  width: 100vw;
   height: 1px;
-  background-color: white;
   z-index: 1;
+  background: #fff;
+}
+:root {
+  --width1: 95vw;
 }
 
 /* graph txt */
 .whatwedo-container .whatwedo-graph .whatwedo-txt {
+  width: var(--width1);
   position: relative;
+  margin: 0 auto;
+  /* border-bottom: 1px solid #fff; */
+  display: flex;
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-txt::after {
   position: absolute;
-  border-radius: 30%;
+  border-radius: 50%;
   content: "";
+  left: -4px;
+  bottom: -4px;
   width: 7px;
   height: 7px;
-  background-color: white;
+  background: #fff;
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item {
   position: relative;
-  left: 5vw;
+  width: calc(var(--width1) / 7);
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 {
-  display: flex;
-  flex-direction: column;
+  vertical-align: top;
+  font-weight: 400;
   font-size: 2vw;
-  text-align: left;
+  position: absolute;
   left: -22px;
   bottom: -13vw;
   width: 200%;
+  height: auto;
+  color: #fff;
+  text-align: left;
+  transform: rotate(-90deg);
   box-sizing: border-box;
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item::after {
   position: absolute;
-  top: 2vh;
-  left: 18.2vw;
+  border-radius: 50%;
   content: "";
+  right: -4px;
+  bottom: -4px;
   width: 7px;
   height: 7px;
-  background-color: white;
-  border-radius: 50%;
-  z-index: 2;
+  z-index: 1;
+  background: #fff;
 }
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item::before {
   position: absolute;
-  top: 3vh;
-  left: 30.5vw;
   content: "";
+  left: calc(50% - 3px);
+  bottom: -4px;
   width: 6px;
+  z-index: 1;
   height: 7px;
   background: url("./assets/images/arrow1.svg");
-  transform: rotate(90deg);
 }
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 span {
   line-height: 1;
   height: auto;
+  display: block;
   font-size: 2vw;
   padding-bottom: 5px;
-  color: rgba(255, 255, 255, 0.5);
   margin: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 {
-  font-size: 2.8vw;
-  z-index: 11;
-  text-align: left;
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item {
+  display: block;
   position: absolute;
-  left: 40vw;
+  bottom: 0;
+  width: calc(var(--width1) / 7);
+  height: calc(var(--width1) / 7 / 2);
+  border-top-left-radius: calc(var(--width1) / 7 / 1);
+  border-top-right-radius: calc(var(--width1) / 7 / 1);
 }
-
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item i {
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: calc(var(--width1) / 7 - 4px);
+  height: calc(var(--width1) / 7 / 2 - 4px);
+  border-top-left-radius: calc(var(--width1) / 7 / 2);
+  border-top-right-radius: calc(var(--width1) / 7 / 2);
+  border-bottom: 0;
+  transform-origin: bottom center;
+  transform: rotate();
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 {
+  color: #fff;
+  font-size: 2.8vw;
+  margin-top: -70px;
+  transform: rotate(-90deg);
+  z-index: 11;
+  position: relative;
+  text-align: left;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h4.point {
+  color: #fff;
+  font-size: 2.8vw;
+  font-weight: 400;
+  position: relative;
+  margin-top: calc(var(--width1) / -7 * 6 / 2 - 20px);
+  position: relative;
+  text-align: center;
+  z-index: 11;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item h4.point::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 50%;
+  top: 80px;
+  width: 0px;
+  height: calc(var(--width1) / 7 * 6 / 2 - 180px);
+  border-right: 1px dotted rgba(255, 255, 255, 0.3);
+}
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h4 span {
   display: block;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.5);
-  margin: 0;
+  font-weight: 200;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt1 {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item i {
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-bottom: 0;
+  left: -0px;
 }
 
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt2 {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2 {
+  width: calc(var(--width1) / 7 * 2);
+  height: calc(var(--width1) / 7 * 2 / 2);
 }
-
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt3 {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2 i {
+  width: calc((var(--width1) / 7 * 2) - 2px);
+  height: calc((var(--width1) / 7 * 2 / 2) - 2px);
+  border-top-left-radius: calc((var(--width1) / 7 * 2 / 2));
+  border-top-right-radius: calc((var(--width1) / 7 * 2 / 2));
 }
-
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt4 {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w3 {
+  width: calc(var(--width1) / 7 * 3);
+  height: calc(var(--width1) / 7 * 3 / 2 + 30px);
 }
-
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt5 {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w3 i {
+  width: calc(var(--width1) / 7 * 3 - 2px);
+  height: calc(var(--width1) / 7 * 3 / 2 - 2px);
+  border-top-left-radius: calc(var(--width1) / 7 * 3 / 2);
+  border-top-right-radius: calc(var(--width1) / 7 * 3 / 2);
 }
-
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .item-txt6 {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w6 {
+  width: calc(var(--width1) / 7 * 6);
+  height: calc(var(--width1) / 7 * 6 / 2 + 110px);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w6 i {
+  width: calc(var(--width1) / 7 * 6 - 2px);
+  height: calc(var(--width1) / 7 * 6 / 2 - 2px);
+  border-top-left-radius: calc(var(--width1) / 7 * 6 / 2);
+  border-top-right-radius: calc(var(--width1) / 7 * 6 / 2);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr4,
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr5 {
+  height: calc(var(--width1) / 7 * 6 / 2 - 180px);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.cl i {
+  left: -0px;
+  border: 2px solid transparent;
+  border-bottom: 0;
+  -webkit-mask: /*4*/ linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.cl.gr1 i {
+  background: linear-gradient(90deg, #fa6738, #79fb9e, #d9fee3) border-box; /*3*/
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.cl.gr2 i {
+  background: linear-gradient(90deg, #fa6738, #b2bb72) border-box; /*3*/
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.cl.gr3 i {
+  background: linear-gradient(90deg, #b2bb72, #79fb9e, #b2fdc7) border-box; /*3*/
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.cl.gr4 i {
+  background: linear-gradient(90deg, #b2fdc7, #d9fee3) border-box; /*3*/
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.cl.gr5 i {
+  background: linear-gradient(90deg, #d9fee3, #ffffff) border-box; /*3*/
 }
 
 /*  main4: our work

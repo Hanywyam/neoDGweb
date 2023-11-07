@@ -49,7 +49,7 @@
         <div class="header-wrapper">
             <div class="header-menu">
                 <!-- logo svg -->
-                <div class="logo" onclick="anchor('home')"><svg width="310" height="39" viewBox="0 0 310 39" fill="none"
+                <div class="logo" onclick="anchor('home')"><svg width="210" height="39" viewBox="0 0 310 39" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="txt">
                             <path
@@ -197,14 +197,13 @@
                             stroke="#79FB9E" stroke-width="0.5" stroke-miterlimit="10" />
                     </svg>
 
-                    <h1>NEO Digital Group</h1>
                     <label id="mouse-over-label"><img src="./assets/images/menus.svg" alt="menus"></label>
                     <ul class="menubars">
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">solution </a></li>
-                        <li><a href="#">what we do</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#about us">about us</a></li>
+                        <li><a href="#solution">solution </a></li>
+                        <li><a href="#what we do">what we do</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -246,7 +245,7 @@
                     </div>
                 </div>
 
-                <div class="about1-txt">
+                <div class="about1-txt" id="about us">
                     <h3>About Us</h3>
                     <h2><em>Digital</em> Transformation</h2>
                     <p>Neo Digital Group®은 귀사의 성공적인 디지털 전환을 돕기위해 브랜드 경험, 고객경험, 생산, 마케팅, 영업, 경영시스템 등 전사적 차원에서 토탈 마케팅 솔루션을
@@ -269,7 +268,7 @@
 
         <!-- main2: our solution 
         ----------------------------->
-        <div class="solution-container">
+        <div class="solution-container" id="solution">
             <img src="./assets/images/chart0.png" alt="chart0">
             <video class="video1"></video>
             <video class="video2"></video>
@@ -344,40 +343,12 @@
                 <h3> what we do
                     <span>capabilities</span>
                 </h3>
-                <p>네오 디지털 그룹은 수익 증대, 브랜드 가치 향상, 투자수익률 개선이
+                <p>네오 디지털 그룹은 수익 증대, 브랜드 가치 향상, 투자수익률 개선이 <br>
                     지속적으로 가능한 비지니스 모델을 만들어 나갑니다.</p>
             </div>
 
             <div class="whatwedo-graph">
-                <div class="graph-line">
-                    <div class="gr1"></div>
-                    <div class="gr2"></div>
-                    <div class="gr2-1"></div>
-                    <div class="gr3"></div>
-                    <div class="gr3-1"></div>
-                    <div class="gr3-2"></div>
-                    <div class="gr4"></div>
-                    <div class="gr5"></div>
-                </div>
-                <!--<div class="graph-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-              <div class="graph-arrow">
-                <div class="arw"></div>
-                <div class="arw"></div>
-                <div class="arw"></div>
-                <div class="arw"></div>
-                <div class="arw"></div>
-                <div class="arw"></div>
-                <div class="arw"></div>
-              </div>-->
+
                 <div class="whatwedo-line">
                     <div></div>
                 </div>
@@ -388,19 +359,19 @@
                             <span>research&<br>intelligence</span>
                             리서치 및 정보수집
                         </h6>
-                        <div class="line-item">
-                            <h4 class="item-txt1">
+                        <div class="line-item cl w6 gr1">
+                            <h4>
                                 운영 서포트
                                 <span>management support</span>
                             </h4>
-                            <i class="cl gr1"></i>
+                            <i></i>
                         </div>
-                        <div class="line-item">
-                            <h4 class="item-txt2">
+                        <div class="line-item cl w2 gr2">
+                            <h4>
                                 전략
                                 <span>strategy</span>
                             </h4>
-                            <i class="cl gr2"></i>
+                            <i></i>
                         </div>
                         <div class="line-dot">
                             <i></i>
@@ -417,17 +388,17 @@
                             <span>bx design</span>
                             브랜드 경험 디자인
                         </h6>
-                        <div class="line-item">
-                            <h4 class="item-txt3">
+                        <div class="line-item cl w3 gr3">
+                            <h4>
                                 구축
                                 <span>build-up</span>
                             </h4>
-                            <i class="cl gr3"></i>
-                        </div>
-                        <div class="line-dot w1">
                             <i></i>
                         </div>
                         <div class="line-dot">
+                            <i></i>
+                        </div>
+                        <div class="line-dot w2">
                             <i></i>
                         </div>
                     </div>
@@ -448,12 +419,12 @@
                             <span>marketing</span>
                             마케팅
                         </h6>
-                        <div class="line-item">
-                            <h4 class="item-txt4">
+                        <div class="line-item cl gr4">
+                            <h4>
                                 확산
                                 <span>spreading</span>
                             </h4>
-                            <i class="cl gr4"></i>
+                            <i></i>
                         </div>
                     </div>
                     <div class="item">
@@ -461,14 +432,14 @@
                             <span>business<br>managment</span>
                             운영
                         </h6>
-                        <div class="line-item">
-                            <h4 class="item-txt5">
+                        <div class="line-item cl gr5">
+                            <h4>
                                 유통
                                 <span>distribution</span>
                             </h4>
-                            <i class="cl gr5"></i>
+                            <i></i>
                         </div>
-                        <h4 class="item-txt6">
+                        <h4 class="point">
                             투자자문
                             <span>investment<br>consulting</span>
                         </h4>
@@ -512,7 +483,7 @@
 
         <!-- main5: contact us 
         ----------------------------->
-        <div class="contact-container">
+        <div class="contact-container" id="contact">
             <div class="gradi-circle-wrap">
                 <div class="ctt-gradi-circle">그라디언트 원</div>
             </div>
