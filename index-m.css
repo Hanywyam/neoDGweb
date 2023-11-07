@@ -194,6 +194,7 @@ body {
   flex-flow: column;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .about1-wrap .about1-bg .bg-line-wrap {
@@ -211,15 +212,24 @@ body {
   border: 1px solid #ff6435;
   border-radius: 60%;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
 }
 
 .about1-wrap .about1-bg .bg-line-wrap .line:nth-child(-n + 4) {
-  width: 90%;
-  height: 60px;
   border: 1px dotted #222;
-  border-radius: 60%;
-  bottom: 0;
+}
+
+.about1-wrap .about1-bg .bg-line-wrap .dott-line1 {
+  bottom: -5%;
+}
+.about1-wrap .about1-bg .bg-line-wrap .dott-line2 {
+  bottom: -10%;
+}
+.about1-wrap .about1-bg .bg-line-wrap .dott-line3 {
+  bottom: -15%;
+}
+.about1-wrap .about1-bg .bg-line-wrap .dott-line4 {
+  bottom: -20%;
 }
 
 .about1-wrap .about1-bg .gradi-circle {
@@ -227,7 +237,6 @@ body {
   height: 40vw;
   position: absolute;
   top: -180px;
-  opacity: 0;
   /* animation: rotate 2s linear infinite; */
 }
 
@@ -260,7 +269,6 @@ body {
   position: absolute;
   top: -12%;
   right: -25%;
-  /* opacity: 0; */
 }
 
 /* main1: about1+2 circle setting */

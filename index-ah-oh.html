@@ -568,21 +568,30 @@
 
         // 1) circle 방향
         const ani1 = gsap.timeline();
-        ani1.to(".about1-wrap .gradi-circle", { y: 500, autoAlpha: 1 });
+        ani1.to(".about1-wrap .solid-line", { y: -530, autoAlpha: 1 }, "move")
 
-        const ani2 = gsap.timeline();
-        // ani2.to(".about1-wrap .solid-line", {y: -500, autoAlpha: 1});
+            .to(".about1-wrap .line:nth-child(-n + 4)", {
+                y: -1000,
+                stagger: {
+                    amount: .1,
+                    from: "top"
+                }
+            }, "move")
+            .to(".about1-wrap .gradi-circle", { y: 800, autoAlpha: 0 }, "move");
+
 
         ScrollTrigger.create({
             animation: ani1,
             trigger: ".about1-wrap",
             start: "top top",
-            end: "+=3000",
+            end: "+=2000",
             scrub: true,
             pin: true,
             anticipatePin: 1,
             // markers: true,
         });
+
+
 
         /*  main1: about2 bg
                 0) 모든 객체 opacity 0 -> 1
