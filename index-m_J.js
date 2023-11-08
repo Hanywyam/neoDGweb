@@ -1,11 +1,15 @@
 /* main5: contact us 
------------------------------
-// main5: submit 버튼 내용이 없으면 alert('필수 내용을 입력해주세요.');
- */
+-----------------------------*/
+// main5: 인풋에 값 입력 후 글자색(#fff) 유지
+const inputs = document.querySelectorAll("type[contact]");
+console.log(inputs);
+/* 
+inputs.blur((e) => {
+  e.target.css("color", "#fff");
+}) */
 
-const form = document.forms.cttForm;
-const input = form.contact;
-// console.log(input);
+// main5: submit 버튼 내용이 없으면 alert('필수 내용을 입력해주세요.'); 
+
 const submitBtn = document.querySelector(".ctt-btn");
 
 submitBtn.addEventListener("click", (e) => {
