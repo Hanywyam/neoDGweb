@@ -16,6 +16,10 @@
     font-size: 1.6rem;
   }
 
+  .about1-wrap .about1-bg .bg-line-wrap .line {
+    height: 90px;
+  }
+
   /* main1: about1 섹션 텍스트 */
   .about1-wrap .about1-txt {
     position: absolute;
@@ -34,8 +38,8 @@
   }
 
   .about1-wrap .about1-bg .gradi-circle {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
 
   /* main2: 배경 설정 */
@@ -106,6 +110,11 @@
 
   .about-container h2 em {
     display: block;
+  }
+
+  .contact-wrap > h2 {
+    display: inline-block;
+    width: auto;
   }
 
   .about-container p {

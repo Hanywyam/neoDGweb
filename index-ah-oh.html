@@ -294,7 +294,7 @@
                         & Distribution</p>
                 </div>
             </div>
-
+            <img src="./assets/images/chart1.svg" alt="chart1" id="chart1">
             <div class="solution-wrap2">
                 <div class="numbers-txt">
                     <h3>By The Numbers</h3>
@@ -568,7 +568,6 @@
             9) circle이 사라지면 dotted-line 모두 top방향으로 사라짐.
             10) 모든 객체 opacity 1 -> 0 */
 
-        // 1) circle 방향
         const ani1 = gsap.timeline();
         ani1.to(".about1-wrap .solid-line", { y: -530, autoAlpha: 1 }, "move")
 
@@ -590,10 +589,7 @@
             scrub: true,
             pin: true,
             anticipatePin: 1,
-            // markers: true,
         });
-
-
 
         /*  main1: about2 bg
                 0) 모든 객체 opacity 0 -> 1
@@ -601,22 +597,49 @@
                 2) circle이 2/3까지 채워졌을 때 txtBox title 등장
                 3) circle의 사이즈가 줄어들면서 txtBox p 등장. 사이즈 화면 30% 정도
                 4) circle이 top에 도착했을때 모든 txtBox 등장 완료.
-                5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 
+                5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 */
 
-        const ani3 = gsap.timeline();
-        ani3.from(".about2-wrap .gradi-circle", { scale: 20, y: 500, autoAlpha: 1 });
+        const ani2 = gsap.timeline();
+        ani2.from(".about2-wrap .gradi-circle", { scale: 8, x: -500, y: 800, autoAlpha: 0 });
 
         ScrollTrigger.create({
-            animation: ani1,
+            animation: ani2,
             trigger: ".about2-wrap",
             start: "top top",
-            end: "+=3000",
+            end: "+=2500",
             scrub: true,
             pin: true,
             anticipatePin: 1,
             // markers: true,
         });
-        */
+        /*
+                ScrollTrigger.create({
+                    trigger: ".solution-wrap1",
+                    start: "top top",
+                    end: "+=3000",
+                    scrub: true,
+                    pin: true,
+                    anticipatePin: 1,
+                });
+        
+                ScrollTrigger.create({
+                    trigger: ".solution-wrap2",
+                    start: "top top",
+                    end: "+=3000",
+                    scrub: true,
+                    pin: true,
+                    anticipatePin: 1,
+                });
+        
+                ScrollTrigger.create({
+                    trigger: ".whatwedo-container",
+                    start: "300 300",
+                    end: "+=3000",
+                    scrub: true,
+                    pin: true,
+                    anticipatePin: 1,
+                    markers: true,
+                }); */
     </script>
 </body>
 
