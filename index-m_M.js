@@ -33,29 +33,44 @@ let pos = {
   now: 0,
   ul: 0,
 };
-let order;
+let isDragging = false;
 
-wrapper.addEventListener("touchmove", startSlider, false);
-wrapper.addEventListener("touchend", adjustSlider, false);
+wrapper.addEventListener("mousedown", startDrag, false);
+wrapper.addEventListener("touchstart", startDrag, false);
+wrapper.addEventListener("mousemove", drag, false);
+wrapper.addEventListener("touchmove", drag, false);
+wrapper.addEventListener("mouseup", stopDrag, false);
+wrapper.addEventListener("touchend", stopDrag, false);
 
-function startSlider(e) {
+function startDrag(e) {
   e = e || window.event;
   e.preventDefault();
-  // console.log(e.changedTouches[0]);
-  pos.prev = e.changedTouches[0].clientX - left_wrap;
-  if (pos.prev > pos.now) {
-    // console.log('오른쪽으로');
-    pos.ul += per;
-  } else {
-    // console.log('왼쪽으로');
-    pos.ul -= per;
-  }
-  moveSlider();
+  isDragging = true;
+  pos.prev = e.clientX || e.touches[0].clientX - left_wrap;
   pos.now = pos.prev;
 }
 
+function drag(e) {
+  e = e || window.event;
+  e.preventDefault();
+  if (isDragging) {
+    pos.now = e.clientX || e.touches[0].clientX - left_wrap;
+    const diff = pos.now - pos.prev;
+    pos.ul += diff;
+    moveSlider();
+    pos.prev = pos.now;
+  }
+}
+
+function stopDrag() {
+  isDragging = false;
+  order = Math.round(pos.ul / hei);
+  pos.ul = order * hei;
+  moveSlider();
+}
+
 function moveSlider() {
-  const minTranslateX = -750;
+  const minTranslateX = -900;
   if (pos.ul > 0) {
     pos.ul = 0;
   }
@@ -65,11 +80,5 @@ function moveSlider() {
   if (pos.ul < minTranslateX) {
     pos.ul = minTranslateX;
   }
-  swiper.style.transform = `translateX(${pos.ul}px)`;
-}
-
-function adjustSlider() {
-  order = Math.round(pos.ul / hei);
-  pos.ul = order * hei;
   swiper.style.transform = `translateX(${pos.ul}px)`;
 }

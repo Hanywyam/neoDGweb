@@ -15,6 +15,7 @@ body {
 -----------------------------> */
 .logo {
   margin-top: 20px;
+  z-index: 9999;
 }
 .header-wrapper {
   color: #fff;
@@ -23,39 +24,41 @@ body {
   font-family: var(--main--font--en);
 }
 
-#mouse-over-label:active ~ .menubars {
+#mouse-over-label:active + .menubars {
   display: block;
-  z-index: 99999;
+  z-index: 8888;
 }
-
 .menubars {
-  top: 200px;
+  position: relative;
+  bottom: 70px;
   display: none;
+  width: 380px;
+  height: 800px;
+  margin: 0;
+  z-index: 8888;
 }
 
 .menubars li {
   text-align: center;
   font-size: 2rem;
   position: relative;
-  top: 150px;
-  left: 80px;
+  top: 240px;
   padding: 10px;
   text-align: center;
-  width: 100%;
 }
 
 .header-menu {
-  z-index: 9999px;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   padding-left: 10px;
-  animation: jaes 5s;
+  animation: jaes 2s;
 }
 @keyframes jaes {
   0% {
-    bottom: 1200px;
+    top: -100px;
   }
 }
 
@@ -71,7 +74,11 @@ body {
   position: absolute;
   top: 350px;
   left: 80px;
-  animation: mins 6s;
+}
+@keyframes mins {
+  0% {
+    transform: perspective(1000px) rotateX(-90deg);
+  }
 }
 
 .main h2 {
@@ -79,12 +86,9 @@ body {
   margin: 0;
   font-weight: bold;
   line-height: normal;
+  animation: mins 3s;
 }
-@keyframes mins {
-  0% {
-    top: -1000px;
-  }
-}
+
 .circle1 {
   position: relative;
   bottom: 200px;
@@ -310,7 +314,7 @@ video {
   position: relative;
 }
 .video1 {
-  top: 80px;
+  top: 520px;
   animation: wave 8s linear infinite alternate;
   transform: rotate(-37deg);
 }
@@ -320,7 +324,7 @@ video {
   }
 }
 .video2 {
-  bottom: 120px;
+  top: 240px;
   animation: wave1 8s linear infinite alternate-reverse;
   transform: rotate(-30deg);
 }
@@ -330,7 +334,7 @@ video {
   }
 }
 .video3 {
-  bottom: 280px;
+  top: 46px;
   animation: wave2 8s linear infinite alternate-reverse;
   transform: rotate(-40deg);
 }
@@ -355,7 +359,7 @@ video {
   position: relative;
   font-size: 1.95rem;
   margin-left: 20px;
-  bottom: 250px;
+  bottom: 300px;
   font-family: var(--title--font-en);
 }
 
@@ -363,18 +367,19 @@ video {
   position: relative;
   left: 60px;
   width: 60px;
+  bottom: 100px;
 }
 
 .solution-wrap1 .solution1-txt2 {
   position: relative;
   left: 150px;
-  bottom: 140px;
+  bottom: 240px;
   width: 130px;
 }
 
 .solution-wrap1 .solution1-txt3 {
   position: relative;
-  bottom: 260px;
+  bottom: 365px;
   left: 270px;
   width: 120px;
 }
@@ -443,7 +448,7 @@ span {
 
 .solution-container img {
   position: relative;
-  top: 350px;
+  top: 750px;
 }
 
 .solution-wrap2 .global-mp4 video {
@@ -475,6 +480,7 @@ span {
 }
 
 .whatwedo-container .whatwedo-wrap h3 {
+  font-family: var(--title--font-en);
   white-space: nowrap;
   color: #fff;
   position: relative;
@@ -560,7 +566,6 @@ span {
   position: relative;
   width: calc(var(--width1) / 7);
 }
-
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item h6 {
   vertical-align: top;
   font-weight: 400;
@@ -666,11 +671,25 @@ span {
   margin: 0 auto;
   width: 100%;
 }
-
-.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item i {
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line.dot i {
   border: 1px dashed rgba(255, 255, 255, 0.3);
   border-bottom: 0;
   left: -0px;
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line i {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: calc(var(--width1) / 7);
+  height: calc(var(--width1) / 7 / 2);
+  border-top-left-radius: calc(var(--width1) / 7 / 1);
+  border-top-right-radius: calc(var(--width1) / 7 / 1);
+}
+.whatwedo-container .whatwedo-graph .whatwedo-txt .item .line.w2 i {
+  width: calc((var(--width1) / 7 * 2) - 2px);
+  height: calc((var(--width1) / 7 * 2 / 2) - 2px);
+  border-top-left-radius: calc((var(--width1) / 7 * 2 / 2));
+  border-top-right-radius: calc((var(--width1) / 7 * 2 / 2));
 }
 
 .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.w2 {

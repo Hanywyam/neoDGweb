@@ -1,6 +1,31 @@
 @charset "utf-8";
 
 @media (min-width: 640px) {
+  /***** header *****/
+
+  .circle1 span {
+    filter: blur(50px);
+    text-indent: -9999px;
+    border-radius: 50%;
+    display: block;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 550px;
+    background: radial-gradient(
+      -90deg,
+      #79fb9e,
+      rgba(189, 93, 4, 0.658),
+      rgba(542, 548, 211)
+    );
+    animation: circle_move 22s linear infinite alternate;
+  }
+
+  /***** solution *****/
+  .solution-wrap1 img {
+    position: relative;
+    width: 1000px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -19,12 +44,15 @@
       bottom: 1000px;
     }
   }
-
+  .menubars {
+    position: relative;
+    bottom: 1000px;
+  }
   .header-wrapper .header-menu {
     position: fixed;
-    bottom: 830px;
+    bottom: 200px;
     left: 10px;
-    animation: jae 1s;
+    animation: jae 0.5s;
   }
   .header-wrapper .header-menu h1 {
     font-size: 1.75rem;
@@ -35,11 +63,12 @@
     bottom: 60px;
     right: 100px;
     line-height: normal;
-    animation: min 7s;
+    animation: min 3s;
+    animation-timing-function: ease-in-out;
   }
   @keyframes min {
     0% {
-      bottom: 800px;
+      transform: perspective(1000px) rotateX(-90deg);
     }
   }
   .header-wrapper img {
@@ -48,15 +77,13 @@
   .header-wrapper ul {
     display: inline-block;
   }
-
   .header-wrapper ul li {
     font-size: 1.325rem;
     padding: 0;
+    top: 1780px;
     left: -280px;
-    top: 780px;
     text-align: left;
-    z-index: 99999999;
-    animation: kim 1s;
+    animation: kim 0.5s;
   }
   @keyframes kim {
     0% {
@@ -78,8 +105,8 @@
     text-indent: -9999px;
     border-radius: 50%;
     display: block;
-    width: 40%;
-    height: 80vh;
+    width: 800px;
+    height: 800px;
     position: relative;
     top: 550px;
     background: radial-gradient(
@@ -119,30 +146,38 @@
     }
   }
   /***** solution *****/
-  .solution-container {
-  }
   .solution-container img {
-    width: 50%;
+    width: 900px;
     position: relative;
-    left: 750px;
-    top: 150px;
+    left: 730px;
+    top: 560px;
+    z-index: 3;
   }
 
-  .solution-container .solution-wrap1 h3 {
-    font-size: 3rem;
+  .solution-container .solution-wrap1 {
+    height: 100vh;
     position: relative;
-    bottom: 2880px;
-    left: 450px;
+  }
+  .solution-container .solution-wrap2 {
+    height: 100vh;
+    position: relative;
+    top: 920px;
+  }
+  .solution-container .solution-wrap1 h3 {
+    font-size: 3.1rem;
+    position: relative;
+    bottom: 2630px;
+    left: 365px;
     font-family: var(--title--font-en);
   }
   .solution-container .solution-wrap1 h5 {
-    margin-right: 40px;
-    font-weight: 500;
-    font-size: 1.5rem;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: 1.3rem;
   }
   .solution-container .solution-wrap1 p {
     font-size: 1.13rem;
-    font-weight: 100;
+    font-weight: lighter;
     font-family: var(--main--font-en);
     line-height: normal;
   }
@@ -151,29 +186,28 @@
   .solution1-txt3 {
     display: flex;
     position: relative;
+    z-index: 333;
   }
   .solution-container .solution1-txt1 {
-    left: 920px;
-    bottom: 2750px;
-    width: 220px;
+    left: 900px;
+    bottom: 2500px;
+    width: 200px;
   }
 
   .solution-container .solution1-txt2 {
-    left: 1120px;
-    bottom: 2900px;
-    width: 230px;
+    left: 1100px;
+    bottom: 2650px;
+    width: 200px;
   }
   .solution-container .solution1-txt3 {
-    left: 1340px;
-    bottom: 3050px;
-    width: 380px;
+    left: 1280px;
+    bottom: 2820px;
+    width: 350px;
   }
   .solution-container .solution1-txt3 h5 {
     white-space: nowrap;
   }
 
-  .solution-wrap2 {
-  }
   .solution-wrap2 .numbers-txt {
     position: relative;
     bottom: 730px;
@@ -246,12 +280,16 @@
     font-size: 1rem;
     width: 300px;
   }
+  .solution-container video {
+    width: 1700px;
+    z-index: 1;
+  }
   .video1 {
     position: relative;
-    top: -300px;
-    left: 200px;
+    top: 70px;
+    left: 400px;
     animation: waves 7s linear infinite alternate-reverse;
-    transform: rotateX(10deg) rotate(-30deg);
+    transform: rotateX(10deg) rotate(-32deg);
   }
   @keyframes waves {
     to {
@@ -260,10 +298,10 @@
   }
   .video2 {
     position: relative;
-    top: -1400px;
-    left: 300px;
+    top: -750px;
+    left: 450px;
     animation: waves1 7s linear infinite alternate-reverse;
-    transform: rotateX(10deg) rotate(-30deg);
+    transform: rotateX(10deg) rotate(-29deg);
   }
   @keyframes waves1 {
     to {
@@ -272,9 +310,10 @@
   }
   .video3 {
     position: relative;
-    top: -2200px;
-    animation: waves2 7s linear infinite alternate-reverse;
-    transform: rotateX(10deg) rotate(-40deg);
+    top: -1750px;
+    left: 500px;
+    animation: waves2 7s linear infinite alternate;
+    transform: rotateX(10deg) rotate(-30deg);
   }
   @keyframes waves2 {
     to {
