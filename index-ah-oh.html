@@ -46,7 +46,7 @@
     <!-- header
     ========================== -->
     <header>
-        <div class="header-wrapper">
+        <div class="header-wrapper bgcolor-item" data-bgcolor="#000000">
             <div class="header-menu">
                 <!-- logo svg -->
                 <div class="logo" onclick="anchor('home')"><svg width="210" height="39" viewBox="0 0 310 39" fill="none"
@@ -229,12 +229,12 @@
     <main>
         <!-- bg: scroll background-color 
         ----------------------------->
-        <div class="scroll-bg"></div>
+        <div class="scroll-bg bgcolor-item" data-bgcolor="#666666"></div>
 
         <!-- main1: about us 
         ----------------------------->
         <div class="about-container" id="aboutus">
-            <div class="about1-wrap">
+            <div class="about1-wrap bgcolor-item" data-bgcolor="#ffffff">
                 <div class="about1-bg">
                     <div class="gradi-circle">그라디언트 구체</div>
                     <div class="bg-line-wrap">
@@ -543,6 +543,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <script>
+        gsap.utils.toArray(".bgcolor-item").forEach((item) => {
+            let color = item.getAttribute("data-bgcolor");
+
+            ScrollTrigger.create({
+                trigger: item,
+                start: "top 50%",
+                end: "bottom 5%",
+                // markers: true,
+
+                onEnter: () => gsap.to(".bgcolor-item", {
+                    backgroundColor: color,
+                    duration: 1.4
+                }),
+                onEnterBack: () => gsap.to(".bgcolor-item", {
+                    backgroundColor: color,
+                    duration: 1.4
+                }),
+            });
+        });
+
         /* header -> main 1 넘어갈 때 배경색 자연스럽게..
         let bg = gsap.timeline({
             ScrollTrigger: {

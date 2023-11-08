@@ -7,8 +7,6 @@ body {
   width: 100%;
   font-family: var(--main--font--ko);
   word-break: keep-all;
-  /* --bg-color: #000;
-  background-color: var(--bg-color); */
 }
 
 /* header 
@@ -139,7 +137,16 @@ body {
     background-color: salmon;
   }
 }
-
+/* header -> main1 넘어가는 배경
+-----------------------------> */
+.bgcolor-item {
+  background-color: #000;
+}
+.scroll-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #666;
+}
 /* main1: about us 
 -----------------------------> */
 .about-container {
