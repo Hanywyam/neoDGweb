@@ -230,7 +230,7 @@
     <main>
         <!-- bg: scroll background-color 
         ----------------------------->
-        <div class="scroll-bg bgcolor-item" data-bgcolor="#666666"></div>
+        <div class="scroll-bg bgcolor-item" data-bgcolor="#000000"></div>
 
         <!-- main1: about us 
         ----------------------------->
@@ -558,11 +558,11 @@
 
                 onEnter: () => gsap.to(".bgcolor-item", {
                     backgroundColor: color,
-                    duration: 1.4
+                    duration: 1
                 }),
                 onEnterBack: () => gsap.to(".bgcolor-item", {
                     backgroundColor: color,
-                    duration: 1.4
+                    duration: 1
                 }),
             });
         });
@@ -592,8 +592,10 @@
             10) 모든 객체 opacity 1 -> 0 */
 
         const ani1 = gsap.timeline();
-        ani1.to(".about1-wrap .solid-line", { y: -530, autoAlpha: 1 }, "move")
-
+        ani1.to(".about1-txt h3", { autoAlpha: 1 }, "move")
+            .to(".about1-txt p", { y: 10, autoAlpha: 1 }, "move")
+            .to(".about1-txt h2", { autoAlpha: 1 }, "move")
+            .to(".about1-wrap .solid-line", { y: -530, autoAlpha: 1 }, "move")
             .to(".about1-wrap .line:nth-child(-n + 4)", {
                 y: -1000,
                 stagger: {
@@ -623,7 +625,9 @@
                 5) circle이 top으로 사라지면서 txtBox opacity 1 -> 0 */
 
         const ani2 = gsap.timeline();
-        ani2.from(".about2-wrap .gradi-circle", { scale: 8, x: -500, y: 800, autoAlpha: 0 });
+        ani2.from(".about2-wrap .about2-txt h2", { autoAlpha: 0 }, "move")
+            .from(".about2-wrap .about2-txt p", { y: -10, autoAlpha: 0 }, "move")
+            .from(".about2-wrap .gradi-circle", { scale: 8, x: -500, y: 800, autoAlpha: 0 }, "move");
 
         ScrollTrigger.create({
             animation: ani2,

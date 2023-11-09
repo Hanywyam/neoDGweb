@@ -189,6 +189,7 @@ body {
   font-weight: bold;
   color: #666;
   margin: 30px 0;
+  opacity: 0;
 }
 
 .about-container h2 {
@@ -201,10 +202,12 @@ body {
 
 .about-container .about1-txt h2 {
   color: #222;
+  opacity: 0;
 }
 
 .about-container .about1-txt p {
   color: #444;
+  opacity: 0;
 }
 
 .about-container p {
