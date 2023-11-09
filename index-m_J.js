@@ -8,7 +8,7 @@ inputs.blur((e) => {
   e.target.css("color", "#fff");
 }) */
 
-// main5: submit 버튼 내용이 없으면 alert('필수 내용을 입력해주세요.'); 
+// main5: submit 버튼 내용이 없으면 alert('필수 내용을 입력해주세요.');
 
 const submitBtn = document.querySelector(".ctt-btn");
 

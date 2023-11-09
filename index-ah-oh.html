@@ -46,8 +46,8 @@
     <!-- header
     ========================== -->
     <header>
-        <div class="header-wrapper bgcolor-item" data-bgcolor="#000000">
-            <div class="header-menu">
+        <div class="header-wrapper">
+            <div class="header-menu" data-bgcolor="#000000">
                 <!-- logo svg -->
                 <div class="logo" onclick="anchor('home')"><svg width="210" height="39" viewBox="0 0 310 39" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -226,6 +226,7 @@
 
     <!-- main
     ========================== -->
+
     <main>
         <!-- bg: scroll background-color 
         ----------------------------->
@@ -277,21 +278,23 @@
                 <video class="video2"></video>
                 <video class="video3"></video>
                 <h3>Our Solution</h3>
-                <div class="solution1-txt1">
-                    <h5>기획</h5>
-                    <p>Making Strategy
-                        for DNVB</p>
-                </div>
-                <div class="solution1-txt2">
-                    <h5>구축</h5>
-                    <p>Building Up
-                        Digital Creation</p>
-                </div>
-                <div class="solution1-txt3">
-                    <h5>확산 / 유통</h5>
-                    <p>Spreading through <br>
-                        Viral, Performance Marketing
-                        & Distribution</p>
+                <div class="txts">
+                    <div class="solution1-txt1">
+                        <h5>기획</h5>
+                        <p>Making Strategy
+                            for DNVB</p>
+                    </div>
+                    <div class="solution1-txt2">
+                        <h5>구축</h5>
+                        <p>Building Up
+                            Digital Creation</p>
+                    </div>
+                    <div class="solution1-txt3">
+                        <h5>확산 / 유통</h5>
+                        <p>Spreading through <br>
+                            Viral, Performance Marketing
+                            & Distribution</p>
+                    </div>
                 </div>
             </div>
             <img src="./assets/images/chart1.svg" alt="chart1" id="chart1">
@@ -564,15 +567,6 @@
             });
         });
 
-        /* ScrollTrigger.create({
-            trigger: ".header-wrapper",
-            start: "top top",
-            end: "+=2000",
-            scrub: true,
-            pin: true,
-            anticipatePin: 1,
-        });
- */
         ScrollTrigger.create({
             trigger: ".scroll-bg",
             start: "top top",
@@ -642,36 +636,20 @@
             // markers: true,
         });
 
-
-
-        /*
-                ScrollTrigger.create({
-                    trigger: ".solution-wrap1",
-                    start: "top top",
-                    end: "+=3000",
-                    scrub: true,
-                    pin: true,
-                    anticipatePin: 1,
-                });
-        
-                ScrollTrigger.create({
-                    trigger: ".solution-wrap2",
-                    start: "top top",
-                    end: "+=3000",
-                    scrub: true,
-                    pin: true,
-                    anticipatePin: 1,
-                });
-        
-                ScrollTrigger.create({
-                    trigger: ".whatwedo-container",
-                    start: "300 300",
-                    end: "+=3000",
-                    scrub: true,
-                    pin: true,
-                    anticipatePin: 1,
-                    markers: true,
-                }); */
+        /* about txt 애니메이션 효과 주기
+        @keyframes txtOpsty {
+          0% {
+            opacity: 0;
+          }
+        }
+        @keyframes txtMov {
+          0% {
+            transform: translateY(30px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        } */
     </script>
 </body>
 

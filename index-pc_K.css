@@ -1,11 +1,20 @@
 @charset "utf-8";
-
 @media (min-width: 640px) {
   /***** header *****/
   .main h2 {
     position: relative;
     font-size: 5rem;
-    left: 50px;
+    left: 150px;
+  }
+  .logo svg {
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .header-menu img {
+    margin-right: 50px;
+    margin-top: 20px;
+    width: 50px;
   }
   .circle1 span {
     filter: blur(50px);
@@ -15,7 +24,7 @@
     width: 500px;
     height: 500px;
     position: relative;
-    top: 550px;
+    top: 100px;
     background: radial-gradient(
       -90deg,
       #79fb9e,
@@ -26,17 +35,142 @@
   }
 
   /***** solution *****/
-  .solution-wrap1 img {
+  .solution-container {
     position: relative;
-    width: 1000px;
-    top: 530px;
+  }
+  .txts {
+    position: relative;
+  }
+
+  .solution-wrap1 img {
+    width: 750px;
+    top: 800px;
+    left: 270px;
   }
   .solution-wrap1 h3 {
-    position: relative;
-    bottom: 1650px;
+    bottom: 150vw;
+    left: 50px;
     font-size: 5rem;
   }
+  .solution1-txt1,
+  .solution1-txt2,
+  .solution1-txt3 {
+    display: flex;
+    width: 200px;
+  }
+  .solution-wrap1 .solution1-txt1 {
+    bottom: 120vw;
+    left: 430px;
+    width: 200px;
+  }
+  .solution-wrap1 .solution1-txt1 h5 {
+    font-size: 1.3rem;
+    margin-right: 25px;
+  }
+  .solution-wrap1 .solution1-txt1 p {
+    font-size: 1.12rem;
+  }
+  .solution-wrap1 .solution1-txt2 {
+    bottom: 135vw;
+    left: 570px;
+    width: 200px;
+  }
+  .solution-wrap1 .solution1-txt2 h5 {
+    margin-right: 25px;
+  }
+  .solution-wrap1 .solution1-txt2 p {
+    font-size: 1.12rem;
+  }
+  .solution-wrap1 .solution1-txt3 {
+    bottom: 148vw;
+    left: 740px;
+    width: 400px;
+  }
+  .solution-wrap1 .solution1-txt3 h5 {
+    margin-right: 25px;
+  }
+  .solution-wrap1 .solution1-txt3 p {
+    font-size: 1.12rem;
+    width: 230px;
+  }
+  .video1 {
+    top: -5vh;
+  }
+  .video2 {
+    top: -400px;
+  }
+  .video3 {
+    top: -800px;
+  }
+  .solution-wrap2 .numbers-txt {
+    bottom: 690px;
+    left: 300px;
+  }
+  .solution-wrap2 h3 {
+    font-size: 3rem;
+    font-family: var(--title--font-en);
+  }
+  .solution-wrap2 p {
+    font-size: 1.2rem;
+    width: 500px;
+  }
+  .global-mp4 {
+    width: 700px;
+    top: -450px;
+    left: 450px;
+  }
+
+  .solution-wrap2 .solution2-txt1 {
+    top: -750px;
+    left: 200px;
+  }
+  .solution-wrap2 h5 {
+    font-size: 2rem;
+  }
+  .solution-wrap2 span {
+    font-size: 0.8rem;
+  }
+  .solution-wrap2 p {
+    font-size: 0.7rem;
+  }
+  .solution-wrap2 .solution2-txt1 p {
+    top: 80px;
+    right: 85px;
+    width: 220px;
+  }
+  .solution-wrap2 .solution2-txt2 {
+    top: -1000px;
+    left: 750px;
+  }
+  .solution-wrap2 .solution2-txt2 p {
+    top: 100px;
+    right: 80px;
+    width: 200px;
+  }
+  .solution-wrap2 .solution2-txt3 {
+    top: -840px;
+    left: 700px;
+  }
+  .solution-wrap2 .solution2-txt3 p {
+    top: 100px;
+    right: 85px;
+    width: 230px;
+  }
+  #chart1 {
+    z-index: 1;
+    top: 400px;
+    animation: chart1 8s infinite;
+  }
+  @keyframes chart1 {
+    0% {
+      transform: rotateX(70deg) rotate(0deg);
+    }
+    100% {
+      transform: rotateX(70deg) rotate(360deg);
+    }
+  }
 }
+
 @media (min-width: 1940px) {
   .header-wrapper .header-menu {
     position: fixed;
@@ -168,6 +302,9 @@
     }
   }
   /***** solution *****/
+  .solution-container {
+    height: 200vh;
+  }
   .solution-container img {
     width: 900px;
     position: relative;
@@ -231,7 +368,7 @@
   }
   .solution-wrap2 .numbers-txt {
     position: relative;
-    bottom: 730px;
+    bottom: 2700px;
     left: 400px;
   }
   .solution-wrap2 .numbers-txt h3 {
@@ -248,12 +385,12 @@
     width: 40%;
     position: relative;
     left: 820px;
-    top: -540px;
+    top: -2500px;
   }
   .solution-wrap2 .solution2-txt1 {
     position: relative;
-    top: -800px;
-    left: 300px;
+    top: -2750px;
+    left: 330px;
     line-height: normal;
   }
   .solution-wrap2 .solution2-txt1 h5 {
@@ -272,7 +409,7 @@
   }
   .solution-wrap2 .solution2-txt2 {
     position: relative;
-    top: -1250px;
+    top: -3200px;
     left: 1100px;
   }
   .solution-wrap2 .solution2-txt2 h5 {
@@ -287,7 +424,7 @@
   }
   .solution-wrap2 .solution2-txt3 {
     position: relative;
-    top: -1000px;
+    top: -3000px;
     left: 1200px;
   }
   .solution-wrap2 .solution2-txt3 h5 {
@@ -295,7 +432,6 @@
   }
   .solution-wrap2 .solution2-txt3 span {
     font-size: 1rem;
-    margin-right: 25px;
   }
   .solution-wrap2 .solution2-txt3 p {
     font-size: 1rem;
@@ -344,10 +480,11 @@
   #chart1 {
     position: relative;
     width: 5000px;
-    top: 1650px;
+    top: -320px;
     left: 200px;
     animation: chart1 9s linear infinite;
     transform: rotateX(80deg);
+    z-index: 1;
   }
   @keyframes chart1 {
     0% {
