@@ -27,3 +27,74 @@ submitBtn.addEventListener("click", (e) => {
     return true;
   }
 });
+
+
+/* header: 메뉴바 보이기
+ -----------------------------
+
+const menuIcon = document.querySelector(".mouse-over-label");
+const menu = document.querySelectorAll(".menubars");
+const menuLi = document.querySelectorAll(".menubars li");
+const globalMenuA = document.querySelectorAll(".menubars a");
+
+// 해당 박스로 부드러운 이동
+globalMenuA.forEach((item, idx) => {
+  item.addEventListener("click", (evt) => {
+    evt.preventDefault();
+
+    const boxes = document.querySelectorAll("href[#]");
+    const getBox = boxes[idx].offsetTop;
+    scrollTo({
+      top: getBox,
+      behavior: "smooth",
+    });
+  });
+});
+
+// 모바일 토글 버튼
+menuIcon.addEventListener("click", (evt) => {
+  const target = evt.currentTarget;
+
+  // target.classList.toggle("close-icon");
+  menu.classList.toggle("menuOn");
+
+  menuLi.forEach((li) => {
+    li.addEventListener("click", () => {
+      // target.classList.remove("close-icon");
+      menu.classList.remove("menuOn");
+    });
+  });
+});
+*/
+
+const menuIcon = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menubars");
+const menuLi = document.querySelectorAll(".menubars li");
+const globalMenuA = document.querySelectorAll(".menubars a");
+
+globalMenuA.forEach((item, idx) => {
+  item.addEventListener("click", (evt) => {
+    evt.preventDefault();
+
+    const targetId = item.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const getBox = targetElement.offsetTop;
+      window.scrollTo({
+        top: getBox,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+menuIcon.addEventListener("click", () => {
+  menu.classList.toggle("menuOn");
+
+  menuLi.forEach((li) => {
+    li.addEventListener("click", () => {
+      menu.classList.remove("menuOn");
+    });
+  });
+});
