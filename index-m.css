@@ -1040,6 +1040,7 @@ span {
   justify-content: space-evenly;
   padding-left: 20px;
   font-family: var(----title--font-en);
+  box-sizing: border-box;
 }
 
 .footer-container p {
