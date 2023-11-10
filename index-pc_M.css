@@ -105,7 +105,7 @@
   }
   .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr4,
   .whatwedo-container .whatwedo-graph .whatwedo-txt .item .line-item.gr5 {
-    height: calc(var(--width1) / 7 * 6 / 11);
+    height: calc(var(--width1) / 7 * 6 / 12);
   }
 
   /* work */
@@ -117,42 +117,43 @@
     left: 30%;
     font-size: 11vw;
   }
-  .work-container .wrapper-img {
-    position: relative;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-  }
-  .work-container .wrapper-img .work-img-wrap {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    cursor: grab;
-    width: 100%;
-    height: 100%;
-    transition: all 0.1s;
-  }
-  .work-container .wrapper-img .work-img-wrap > div {
-    position: relative;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: none;
-    opacity: 1;
-    margin-left: 3vw;
-    width: 40vw;
-    height: 40vw;
-    aspect-ratio: 1/1;
-    pointer-events: none;
   }
-  .work-container .wrapper-img .work-img-wrap div a img {
-    width: 40vw;
-    height: 40vw;
+
+  .swiper-slide img {
+    display: block;
+    max-width: 105%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+  }
+
+  .swiper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .swiper-slide img:hover {
+    transform: scale(0.9);
   }
   .work-container .wrapper-img .work-img-wrap .work-control {
     display: none;
   }
 }
 @media (min-width: 1200px) {
+  .whatwedo-container .whatwedo-wrap {
+    top: 5vh;
+  }
+
+  /* our work */
+  .swiper-slide img {
+    max-width: 100%;
+  }
 }

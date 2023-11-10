@@ -26,6 +26,9 @@
     <!-- 변수 css -->
     <link rel="stylesheet" href="./assets/styles/variable.css">
 
+    <!-- 외부링크 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- css link :K-민재/ M-지민/ J-재영 -->
     <link rel="stylesheet" href="./index-m.css">
     <link rel="stylesheet" href="./index-pc_K.css">
@@ -34,11 +37,12 @@
 
     <!-- javaScript link : 외부링크 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-    <!-- javaScript link :K-민재/ M-지민/ J-재영 -->
-    <!-- <script defer src="./index-m_K.js"></script> -->
-    <script defer src="./index-m_M.js"></script>
-    <script defer src="./index-m_J.js"></script>
+    <!-- javaScript link -->
+    <script defer src="./index-M.js"></script>
+    <script defer src="./index-J.js"></script>
 
 </head>
 
@@ -343,7 +347,7 @@
 
         <!-- main3: what we do 
         ----------------------------->
-        <div class="whatwedo-container" id="whatwedo">
+        <div class="whatwedo-container">
             <div class="whatwedo-wrap">
                 <h3> what we do
                     <span>capabilities</span>
@@ -378,7 +382,7 @@
                             </h4>
                             <i></i>
                         </div>
-                        <div class="line-dot">
+                        <div class="line dot">
                             <i></i>
                         </div>
                     </div>
@@ -400,10 +404,10 @@
                             </h4>
                             <i></i>
                         </div>
-                        <div class="line-dot">
+                        <div class="line dot">
                             <i></i>
                         </div>
-                        <div class="line-dot w2">
+                        <div class="line dot w2">
                             <i></i>
                         </div>
                     </div>
@@ -453,6 +457,7 @@
             </div>
         </div>
 
+
         <!-- main4: our work 
         ----------------------------->
         <div class="work-container">
@@ -460,32 +465,32 @@
                 <div class="top">
                     <div></div>
                 </div>
-                <div class="bottom" id="work">
+                <div class="bottom">
                     <div></div>
-                    <h3>our work</h3>
+                    <h3 id="work">our work</h3>
                 </div>
             </div>
             <div id="wrapImg" class="wrapper-img">
-                <div id="wrapper" class="work-img-wrap">
-                    <div class="on"><a href="#"><img src="./assets/images/test1_4e5791bc.png" alt="코트를 입고 있는 두 사람"></a>
+                <div #swiperRef="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/images/test1_4e5791bc.png" alt="코트를 입은 두 여자">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="./assets/images/building-facade-logo-mockup15B15D_7c1c0fac.jpg" alt="건물 로고">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="./assets/images/977466ebd2cbe1bf111f6ff283717ed25B15D_421989b7.webp" alt="외부 간판">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="./assets/images/Free-Premium-Stationery-PSD-Mockup5B15D_e5996a84.jpg" alt="베이지 명함">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="./assets/images/Sign-on-the-Building-Mockup5B15D_cda9b2c1.jpg" alt="외벽 간판">
+                        </div>
                     </div>
-                    <div><a href="#"><img src="./assets/images/building-facade-logo-mockup15B15D_7c1c0fac.jpg"
-                                alt="건물 외벽 로고"></a></div>
-                    <div><a href="#"><img src="./assets/images/Free-Premium-Stationery-PSD-Mockup5B15D_e5996a84.jpg"
-                                alt="명함 이미지"></a></div>
-                    <div><a href="#"><img src="./assets/images/977466ebd2cbe1bf111f6ff283717ed25B15D_421989b7.webp"
-                                alt="텐다 외부 간판"></a></div>
-
-                    <section class="work-control">
-                        <a class="on" href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                    </section>
                 </div>
             </div>
         </div>
-
         <!-- main5: contact us 
         ----------------------------->
         <div class="contact-container" id="contact">
@@ -639,21 +644,6 @@
             anticipatePin: 1,
             // markers: true,
         });
-
-        /* about txt 애니메이션 효과 주기
-        @keyframes txtOpsty {
-          0% {
-            opacity: 0;
-          }
-        }
-        @keyframes txtMov {
-          0% {
-            transform: translateY(30px);
-          }
-          100% {
-            transform: translateY(0);
-          }
-        } */
     </script>
 </body>
 
