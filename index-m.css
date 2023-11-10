@@ -1033,14 +1033,15 @@ span {
 ----------------------------- */
 .footer-container {
   background-color: #000;
-  height: 60vh;
+  height: 100vh;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  box-sizing: border-box;
   padding-left: 20px;
   font-family: var(----title--font-en);
-  box-sizing: border-box;
+  position: absolute;
 }
 
 .footer-container p {
@@ -1050,6 +1051,8 @@ span {
 
 .footer-container .text1 {
   margin-right: 120px;
+  position: relative;
+  top: 50px;
 }
 
 .footer-container .text1 span {
@@ -1059,6 +1062,8 @@ span {
 
 .footer-container .text2 {
   margin-bottom: 20px;
+  position: relative;
+  top: 50px;
 }
 
 .footer-container .text2 p {
@@ -1074,7 +1079,7 @@ span {
 
 .footer-container .text3 {
   position: relative;
-  bottom: 25px;
+  top: 25px;
   margin-bottom: 10px;
 }
 
@@ -1090,7 +1095,7 @@ span {
 
 .footer-container .text4 {
   position: relative;
-  bottom: 40px;
+  top: 10px;
   text-align: left;
   margin-left: 15px;
   display: flex;
@@ -1112,7 +1117,7 @@ span {
 
 .footer-container .footer {
   position: relative;
-  bottom: 40px;
+  top: 10px;
   margin-left: 20px;
   right: 5px;
 }
