@@ -583,7 +583,11 @@ span {
 :root {
   --width1: 95vw;
 }
-
+/* GSAP 작업용 설정 =========J */
+.whatwedo-graph .item {
+  opacity: 1;
+  transition: 0.5s;
+}
 /* graph txt */
 .whatwedo-container .whatwedo-graph .whatwedo-txt {
   width: var(--width1);

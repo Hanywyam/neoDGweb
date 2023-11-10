@@ -551,6 +551,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <script>
+        /* header:
+        ----------------------------- */
         // header -> main 1 넘어갈 때 배경색 자연스럽게..
         gsap.utils.toArray(".bgcolor-item").forEach((item) => {
             let color = item.getAttribute("data-bgcolor");
@@ -641,6 +643,47 @@
             end: "+=2500",
             scrub: true,
             pin: true,
+            anticipatePin: 1,
+            // markers: true,
+        });
+
+        /* main4: whatwedo
+        ----------------------------- */
+        /* whatwedo 페이지 스트롤 트리거
+        ----------------------------- 
+        0) 타이틀텍스트 전체 opacity: 0 -> 1, 아래 -> 위로 등장
+        1) 왼쪽 텍스트 전체 opacity: 0 -> 1
+        2) 그래프 축 위 -> 아래, 핀(점, 화살표)같이 등장
+        3) 그래프 선 rotate로 등장
+        4) 오른쪽 텍스트 전체 opacity: 0 -> 1 */
+
+        const textElements = document.querySelectorAll('.whatwedo-graph .item');
+
+        textElements.forEach((item, index) => {
+
+            const ani3 = gsap.timeline();
+            ani3.from(item, { y: "-100%", opacity: 0, duration: 0.02, ease: "power2.inOut" }, `+=${index * 0.02}`);
+
+            ScrollTrigger.create({
+                animation: ani3,
+                trigger: '.whatwedo-container',
+                start: '-60% top',
+                end: 'bottom 140%',
+                scrub: true,
+                anticipatePin: 1,
+                // markers: true,
+            });
+        });
+
+        const ani4 = gsap.timeline();
+        ani4.from('.whatwedo-wrap', { y: 30, autoAlpha: 0 });
+
+        ScrollTrigger.create({
+            animation: ani4,
+            trigger: '.whatwedo-container',
+            start: 'top 50%',
+            end: 'bottom bottom',
+            scrub: true,
             anticipatePin: 1,
             // markers: true,
         });
