@@ -2,10 +2,10 @@
 
 ### 웹사이트 리디자인, 사이트 구현을 목표로 한다 (반응형 웹사이트 제작) <br> Making homepage(neo digital group)
 
-> git hub site: [click](https://ah-oh-team-project.github.io/make_neoDG/) <br>
-> notion site: [click](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
-> google-sheet site: [click](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
-> google-slides site: [click](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p)
+> git hub site: [🌐click](https://ah-oh-team-project.github.io/make_neoDG/) <br>
+> notion site: [🌐click](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
+> google-sheet site: [🌐click](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
+> google-slides site: [🌐click](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p)
 
 # :boom: Project Timeline
 
