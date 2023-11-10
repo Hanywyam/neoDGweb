@@ -979,7 +979,7 @@ span {
 ----------------------------- */
 .footer-container {
   background-color: #000;
-  height: 100vh;
+  height: 60vh;
   color: #fff;
   display: flex;
   flex-direction: column;
