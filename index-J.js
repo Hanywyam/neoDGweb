@@ -1,13 +1,5 @@
 /* main5: contact us 
 -----------------------------*/
-// main5: 인풋에 값 입력 후 글자색(#fff) 유지
-const inputs = document.querySelectorAll("type[contact]");
-console.log(inputs);
-/* 
-inputs.blur((e) => {
-  e.target.css("color", "#fff");
-}) */
-
 // main5: submit 버튼 내용이 없으면 alert('필수 내용을 입력해주세요.');
 
 const submitBtn = document.querySelector(".ctt-btn");
@@ -29,42 +21,7 @@ submitBtn.addEventListener("click", (e) => {
 });
 
 /* header: 메뉴바 보이기
- -----------------------------
-
-const menuIcon = document.querySelector(".mouse-over-label");
-const menu = document.querySelectorAll(".menubars");
-const menuLi = document.querySelectorAll(".menubars li");
-const globalMenuA = document.querySelectorAll(".menubars a");
-
-// 해당 박스로 부드러운 이동
-globalMenuA.forEach((item, idx) => {
-  item.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-    const boxes = document.querySelectorAll("href[#]");
-    const getBox = boxes[idx].offsetTop;
-    scrollTo({
-      top: getBox,
-      behavior: "smooth",
-    });
-  });
-});
-
-// 모바일 토글 버튼
-menuIcon.addEventListener("click", (evt) => {
-  const target = evt.currentTarget;
-
-  // target.classList.toggle("close-icon");
-  menu.classList.toggle("menuOn");
-
-  menuLi.forEach((li) => {
-    li.addEventListener("click", () => {
-      // target.classList.remove("close-icon");
-      menu.classList.remove("menuOn");
-    });
-  });
-});
-*/
+ ----------------------------- */
 
 const menuIcon = document.querySelector(".menu-icon");
 const menu = document.querySelector(".menubars");
