@@ -2,13 +2,18 @@
 
 ### 웹사이트 리디자인, 사이트 구현을 목표로 한다 (반응형 웹사이트 제작) <br> Making homepage(neo digital group)
 
-> PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html)<br>
+> TEAM PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html)<br>
 > git hub site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/) <br>
 > notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
 > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
-> google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p)
+> google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
+> NEO Digital Group: [click🌐](http://neodigitalgroup.co.kr/)
 
 # :boom: Project Timeline
+
+## 23.11.13 [발표 및 보고서 제출]
+
+## 23.11.10 [작업 마무리 및 발표 준비]
 
 ## 23.11.08 [작업 중간점검]
 
@@ -56,7 +61,7 @@
 
 - what we do 컨텐츠 고정되지 않음.
 
-## 23.11.05 미팅 (14:00 오산대역 할리스 DT점)
+## 23.11.05 미팅 [14:00 오산대역 할리스 DT점]
 
 - [x] html, 모바일버전 css 작업 완료.
 - [x] 파비콘, og 적용 완료.
@@ -162,7 +167,7 @@
 - 나눠서 작업한 파일이 있으면 합치기(1인당 css, js 파일 1개씩)
 - 개인 파트에 맞춰서 필요한 gsap 찾아서 공유&공부해오기
 
-#### 11/5 미팅
+#### 11/5 [팀 미팅]
 
 - 각자 설정되어있는 z-index 순서 정리하기
 - 합친 파일에서 문제생기는 오류 찾아서 코드 정리 및 수정
