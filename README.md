@@ -8,8 +8,134 @@
 > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
 > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
 > NEO Digital Group: [click🌐](http://neodigitalgroup.co.kr/)
+> 퍼블리싱 가이드라인: [click](https://github.com/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
+
+## 1. 프로젝트 개요
+
+### 계획 수립 및 설계
+
+- 웹사이트 리디자인 및 사이트 구현 (반응형 웹사이트 제작)
+
+### 선정 프로젝트 명칭
+
+- Neo Digital Group [http://neodigitalgroup.co.kr/](http://neodigitalgroup.co.kr/)
+
+## 2. 기획 의도 & 목표
+
+### 사이트 선정 이유
+
+- 수업에서 배운 내용 외 추가로 GSAP를 따로 공부하여 역동적인 애니메이션의 반응형 웹 구현
+
+### 프로젝트 목표
+
+1. GSAP와 같은 새로운 플러그인을 공부하며 최대한 기존 사이트와 유사하게 구현.
+2. Git organization과 Notion을 이용하여 팀원들과의 협업 과정에서 문제없도록 소통.
+3. 팀 프로젝트의 경험을 통해 작업 속에서 협업이라는 원활한 커뮤니케이션 유지.
+4. 사이트 구조 분석 및 구현에 따른 작업 진행 시, 코드 분석 능력 향상.
+
+## 3. 작업 순서
+
+1. 요구 분석 및 공통 가이드라인 작성
+2. HTML & CSS 각 섹션 작업
+3. Javascript & GSAP 작업
+4. 오류 개선 작업
+5. 발표 & 보고서 작성
+
+## 4. 사용 기술
+
+- 언어 : HTML5, CSS3, JavaScript
+- 플러그인 : GSAP
+- 사용 프로그램: git / GitHub pages
+- 기타 관리 Tool : Notion, Google-sheet, google-slides
+
+## 5. 각 담당 업무
+
+### 역할 분담
+
+|     이름     |                     담당                     |
+| :----------: | :------------------------------------------: |
+| 한재영(리더) | 깃허브 관리, README 파일 정리, PPT대본 작성. |
+| 김민재(팀원) |    이미지 파일 정리, 파일 병합, PPT발표.     |
+| 권지민(팀원) |   일정 체크 및 노션 작성 및 관리, PPT제작.   |
+
+### 작업 분담
+
+|  이름  |      담당 작업 파트      |
+| :----: | :----------------------: |
+| 한재영 |   어바웃과 컨텍트 섹션   |
+| 김민재 | 헤더와 푸터, 솔루션 섹션 |
+| 권지민 |  왓위두와 아워워크 섹션  |
+
+## 6. 프로젝트 내용
+
+### 디렉토리 구조
+
+- 원페이지 구성으로 작업 시 페이지 폴더를 따로 구분하지 않고 작업 진행.
+- 에셋 폴더에는 폰트, 이미지, 스타일 폴더를 만들어 공통 자료와 파일을 정리.
+- 작업 시작 전, 각 개발 도구마다 하나의 파일로 정리하여 진행하려고 하였으나, 파일을 합치는 과정이 원활하지 않아 작업자로 구분하여 여러 개의 파일로 작업 완료.
+
+<img src="./작업자료/images/01.JPG">
+
+### 페이지 구성
+
+- ①header / ②about / ③solution / ④what we do / ⑤our work / ⑥contact /
+  ⑦footer 총 7개의 메인 페이지를 섹션별로 나눠 작업 진행.
+
+<img src="./작업자료/images/02.JPG">
+
+### 작업 시 문제 및 해결
+
+1. **[about us] page**
+
+- **문제 ①:** 원작의 애니메이션이 GSAP를 이용하여 각자의 움직임으로 훨씬 복잡하게 표현하였으나 구현의 어려움.
+
+  - **해결방안**
+  - 동일하게 구현하는 데는 현재 역량으로 한계가 있었다. 대신, 효과를 단순화하여 표현하는 것으로 해결
+
+- **문제 ②:** 헤더에서 어바웃 첫 페이지까지 자연스럽게 넘어가는 효과를 주었는데, 그라디언트 값으로 해결하기에는 자연스럽지 않았다.
+  - **해결방안**
+  - 두 섹션 사이에 새로운 배경 영역을 div로 추가.
+  - GSAP를 이용하여 스크롤 배경 효과를 적용하였다.
+
+2. **[contact us] page**
+
+- **문제 ①:** 값의 유무에 따라 알림창을 다르게 뜰 수 있도록 if 문을 이용하여 자바스크립트 코드를 작업하였으나, false 값만 출력됨.
+
+  - **해결방안**
+  - 처음에는 input만 선언하여 작업하였으나, 모든 input의 아이디를 선언하여, 세 개의 입력값 중 하나라도 빈 문자열이 있는 경우로 확인하도록 작성하여 해결하였다.
+
+- **문제 ②:** placeholder 상태에서 input 값을 입력했을 때 글자 색상이 변해야 하는데, 설정하지 않은 placeholder의 색상까지 값이 적용되었다.
+  - **해결방안**
+  - input 기본값에 컬러를 설정하여 placeholder의 기본값을 유지.
+
+## 7. 프로젝트 완료 리뷰
+
+### 발표 Q&A
+
+<span style="background-color:#1a7ef3; color:white">Q: 솔루션 페이지 점선을 어떤 방법으로 작업한 것인지?</span>
+A: SVG 이미지를 활용하여 CSS style 값으로 애니메이션 효과를 주어 작업했다.
+
+Q: 새로운 플러그인 중 가장 어려웠던 부분은?
+A: 원작에서 표현한 객체별 자유로운 애니메이션을 구현하기가 어려웠다.
+이 부분은 작업하면서도 표현이 어려워 단순화하여 작업했다.
+
+Q: 가로 스크롤이 넘친 부분이 어느 곳인지, 지구본 궤도로 인해 가로 값이 넘친 것인지?
+A: 지구본 궤도를 넣기 전부터 영역이 넘쳤고, 히든이나 박스사이징을 넣으면
+GSAP를 사용하기 어려워서 프로젝트 완료까지 해결하지 못했다.
+
+Q: 그래프는 이미지인지 직접 CSS로 작업한 것인지?
+A: background-color에 gradient 값을 주어 표현했다.
+
+Q: 지구본 궤도는 어떤 방법으로 작업한 것인지?
+A: SVG 이미지를 transform을 이용하여 각도와 로테이션 값으로 애니메이션
+효과를 주었다.
+
+## 8. 팀 프로젝트를 마치며
 
 # :boom: Project Timeline
+
+<details>
+<summary> 프로젝트 타임라인 정리 [접기/펼치기]</summary>
 
 ## 23.11.13 [발표 및 보고서 제출]
 
@@ -242,3 +368,5 @@
     - 한재영: about / contact
     - 김민재: header+footer / solution
     - 권지민: what we do / our work
+
+</details>
