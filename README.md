@@ -1,6 +1,6 @@
 # :love_letter: Team project : Ah-oh
 
-### 웹사이트 리디자인 및 사이트 구현 (반응형 웹사이트 제작) <br> Making homepage(neo digital group)
+### 웹사이트 SPA 반응형 웹 사이트 구현 <br> Making SPA(neo digital group)
 
 <img src="./작업자료/images/neoWeb_Screenshot.gif">
 
@@ -9,19 +9,24 @@
 > notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
 > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
 > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
-> NEO Digital Group: [click🌐](http://neodigitalgroup.co.kr/)
+
+<!-- > NEO Digital Group: [click🌐](http://neodigitalgroup.co.kr/)
+미완성이라 숨기래유,, -->
 
 ## 1. 프로젝트 개요
 
 ### 선정 프로젝트 명칭
 
-- Neo Digital Group ([http://neodigitalgroup.co.kr/](http://neodigitalgroup.co.kr/))
+- 수업에서 배운 내용 외 추가로 GSAP를 따로 공부하여 역동적인 애니메이션의 반응형 웹 구현
+
+<!-- - Neo Digital Group ([http://neodigitalgroup.co.kr/](http://neodigitalgroup.co.kr/)) -->
 
 ## 2. 기획 의도 & 목표
 
+<!--
 ### 사이트 선정 이유
 
-- 수업에서 배운 내용 외 추가로 GSAP를 따로 공부하여 역동적인 애니메이션의 반응형 웹 구현
+- 수업에서 배운 내용 외 추가로 GSAP를 따로 공부하여 역동적인 애니메이션의 반응형 웹 구현 -->
 
 ### 프로젝트 목표
 
@@ -68,6 +73,8 @@
 ### 퍼블리싱 공통 가이드라인
 
 - 작업 시작 전, 공통 가이드라인을 정한 후 작업 진행.
+
+<img src="./작업자료/images/03.JPG">
 
 > 퍼블리싱 가이드라인: [보러가기✅](https://nbviewer.org/github/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
