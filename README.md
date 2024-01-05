@@ -5,7 +5,7 @@
 <img src="./작업자료/images/neoWeb_Screenshot.gif">
 
 > TEAM PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html)<br>
-> git hub site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/) <br>
+> git hub site: [click🌐](https://github.com/Ah-oh-team-project/make_neoDG) <br>
 > notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
 > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
 > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
