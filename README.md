@@ -69,7 +69,7 @@
 
 - 작업 시작 전, 공통 가이드라인을 정한 후 진행하였다.
 
-> 퍼블리싱 가이드라인: [click✅](https://nbviewer.org/github/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
+> 퍼블리싱 가이드라인: [보러가기✅](https://nbviewer.org/github/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 ### 디렉토리 구조
 
