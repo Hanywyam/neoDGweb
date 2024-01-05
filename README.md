@@ -10,7 +10,6 @@
 > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
 > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
 > NEO Digital Group: [click🌐](http://neodigitalgroup.co.kr/)
-> 퍼블리싱 가이드라인: [click](https://github.com/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 ## 1. 프로젝트 개요
 
@@ -65,6 +64,10 @@
 | 권지민 |  왓위두와 아워워크 섹션  |
 
 ## 6. 프로젝트 내용
+
+### 퍼블리싱 공통 가이드라인
+
+> 퍼블리싱 가이드라인: [click](https://nbviewer.org/github/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 ### 디렉토리 구조
 
