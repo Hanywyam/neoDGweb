@@ -170,8 +170,8 @@
 
 # :boom: Project Timeline
 
-<!-- <details>
-<summary> 프로젝트 타임라인 정리 [접기/펼치기]</summary> -->
+<details open>
+<summary> 프로젝트 타임라인 정리 [접기/펼치기]</summary>
 
 ## 23.11.13 [발표 및 보고서 제출]
 
@@ -405,4 +405,4 @@
     - 김민재: header+footer / solution
     - 권지민: what we do / our work
 
-<!-- </details> -->
+</details>
