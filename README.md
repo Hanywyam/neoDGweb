@@ -4,12 +4,6 @@
 
 <img src="./작업자료/images/neoWeb_Screenshot.gif">
 
-> TEAM PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html)<br>
-> git hub site: [click🌐](https://github.com/Ah-oh-team-project/make_neoDG) <br>
-> notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
-> google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431)<br>
-> google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
-
 <!-- > NEO Digital Group: [click🌐](http://neodigitalgroup.co.kr/)
 미완성이라 숨기래유,, -->
 
@@ -166,7 +160,7 @@
 - 첫 프로젝트로 시작했을 때는 살짝 두려웠지만, 작업을 진행하면서 점차 구현되는 작업물을 보며, 내심 뿌듯했다. 첫 팀 프로젝트였음에도 함께 작업하는 것에 서로 이해하고 배려하며 진행되었다. 팀 프로젝트가 끝날때까지 모든 진행 과정에서 작은 트러블조차 없이 원활하게 작업을 마칠 수 있었다.
 - 처음 프로젝트 시작할때 만든 가이드라인이 있음에도 각자 작업하면서 규칙이 틀렸다. 다음 팀 작업 시에는 더 구체적인 가이드라인을 구축한 뒤, 서로 정확하게 공유가 된 상태에서 작업이 진행되는게 좋겠다는 생각이 들었다.
 
-[Go to Top](#love_letter-team-project--ah-oh)
+### [⬇프로젝트 보러가기](#프로젝트-보러가기-1)
 
 # :boom: Project Timeline
 
@@ -406,3 +400,14 @@
     - 권지민: what we do / our work
 
 </details>
+
+# 💫프로젝트 보러가기
+
+> TEAM PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html){:target="\_blank"} <br>
+>
+> > git hub site: [click🌐](https://github.com/Ah-oh-team-project/make_neoDG){:target="\_blank"} <br>
+> > notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b){:target="\_blank"} <br>
+> > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431){:target="\_blank"} <br>
+> > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p){:target="\_blank"} <br>
+
+### [⬆Go to Top](#love_letter-team-project--ah-oh)
