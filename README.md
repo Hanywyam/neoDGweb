@@ -70,7 +70,7 @@
 
 <img src="./작업자료/images/03.JPG">
 
-> ### [퍼블리싱 가이드라인: 보러가기✅](https://nbviewer.org/github/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf){:target="_blank"}
+> ### [퍼블리싱 가이드라인: 보러가기✅](https://nbviewer.org/github/Hanywyam/neoDGweb/blob/main/%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 ### 디렉토리 구조
 
@@ -115,23 +115,23 @@
 
 > #### ❓ 솔루션 페이지 점선을 어떤 방법으로 작업한 것인지?<br>
 >
-> > #### ❕ SVG 이미지를 활용하여 CSS style 값으로 애니메이션 효과를 주어 작업했다.
+> > ❕ SVG 이미지를 활용하여 CSS style 값으로 애니메이션 효과를 주어 작업했다.
 
 > #### ❓ 새로운 플러그인 중 가장 어려웠던 부분은?<br>
 >
-> > #### ❕ 원작에서 표현한 객체별 자유로운 애니메이션을 구현하기가 어려웠다. 이 부분은 작업하면서도 표현이 어려워 단순화하여 작업했다.
+> > ❕ 원작에서 표현한 객체별 자유로운 애니메이션을 구현하기가 어려웠다. 이 부분은 작업하면서도 표현이 어려워 단순화하여 작업했다.
 
 > #### ❓ 가로 스크롤이 넘친 부분이 어느 곳인지, 지구본 궤도로 인해 가로 값이 넘친 것인지?<br>
 >
-> > #### ❕ 지구본 궤도를 넣기 전부터 영역이 넘쳤고, 히든이나 박스사이징을 넣으면 GSAP를 사용하기 어려워서 프로젝트 완료까지 해결하지 못했다.
+> > ❕ 지구본 궤도를 넣기 전부터 영역이 넘쳤고, 히든이나 박스사이징을 넣으면 GSAP를 사용하기 어려워서 프로젝트 완료까지 해결하지 못했다.
 
 > #### ❓ 그래프는 이미지인지 직접 CSS로 작업한 것인지?<br>
 >
-> > #### ❕ background-color에 gradient 값을 주어 표현했다.
+> > ❕ background-color에 gradient 값을 주어 표현했다.
 
 > #### ❓ 지구본 궤도는 어떤 방법으로 작업한 것인지?<br>
 >
-> > #### ❕ SVG 이미지를 transform을 이용하여 각도와 로테이션 값으로 애니메이션 효과를 주었다.
+> > ❕ SVG 이미지를 transform을 이용하여 각도와 로테이션 값으로 애니메이션 효과를 주었다.
 
 ### 발표 피드백
 
@@ -354,13 +354,13 @@
 
 - index.html 작업 진행.
 - 퍼블리싱 가이드 작성.
-  [231030\_코딩가이드\_ah-oh.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf){:target="_blank"}
+  [231030\_코딩가이드\_ah-oh.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231031_%EC%BD%94%EB%94%A9%EA%B0%80%EC%9D%B4%EB%93%9C_ah-oh.pdf)
 
 ## 23.10.27
 
 - 퍼블리싱 사이트 구조 분석.
 - 사이트 구축 요구사항 정리.
-  [231026\_요구사항+구조분석.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231026_%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD+%EA%B5%AC%EC%A1%B0%EB%B6%84%EC%84%9D_ah-oh.pdf){:target="_blank"}
+  [231026\_요구사항+구조분석.pdf](https://ah-oh-team-project.github.io/make_neoDG/%EC%9E%91%EC%97%85%20%EC%9E%90%EB%A3%8C/231026_%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD+%EA%B5%AC%EC%A1%B0%EB%B6%84%EC%84%9D_ah-oh.pdf)
 
 ## 23.10.26
 
@@ -376,7 +376,7 @@
 
 ### 선정 사이트
 
-[NEO Digital Group](http://neodigitalgroup.co.kr/){:target="_blank"}
+[NEO Digital Group](http://neodigitalgroup.co.kr/)
 
 ### 사이트 선정 이유
 
@@ -403,11 +403,11 @@
 
 # 💫프로젝트 보러가기
 
-> ### TEAM PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html){:target="_blank"} <br>
+> ### TEAM PROJECT site: [click🌐](https://ah-oh-team-project.github.io/make_neoDG/index-ah-oh.html) <br>
 >
-> > git hub site: [click🌐](https://github.com/Ah-oh-team-project/make_neoDG){:target="_blank"} <br>
-> > notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b){:target="_blank"} <br>
-> > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431){:target="_blank"} <br>
-> > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p){:target="_blank"} <br>
+> > git hub site: [click🌐](https://github.com/Ah-oh-team-project/make_neoDG) <br>
+> > notion site: [click🌐](https://www.notion.so/Team-Project-Ah-oh-d201d4fcb7a749b3a4d7d144dc31513b) <br>
+> > google-sheet site: [click🌐](https://docs.google.com/spreadsheets/d/1yiq65yUBoeE5xjIBpyG7Syw865Bxr23vybb4IEW3J3o/edit?hl=ko#gid=2040591431) <br>
+> > google-slides site: [click🌐](https://docs.google.com/presentation/d/1hNUKbtyGXCIqX4KJQZ0BC7rGdM36yLEDdiOziVsSQqk/edit#slide=id.p) <br>
 
 ### [⬆Go to Top](#love_letter-team-project--ah-oh)
